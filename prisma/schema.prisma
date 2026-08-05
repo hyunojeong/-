@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// 강사 (원장, 스피치 선생님 등)
+model Teacher {
+  id        String   @id @default(cuid())
+  name      String
+  color     String   @default("#2563eb") // 캘린더에서 강사 구분용
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  sessions ClassSession[]
+}
+
+// 강의실 (A, B)
+model Room {
+  id        String   @id @default(cuid())
+  name      String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  sessions ClassSession[]
+}
+
+// 과정 종류 (정규, 커스텀, KE-Fit, 스피치 등) - 추후 추가/비활성화 가능
+model CourseType {
+  id             String   @id @default(cuid())
+  name           String   @unique
+  defaultPrice   Int      // 과정 전체 패키지 기본 총액 (원)
+  defaultSessions Int?    // 기본 회차수 (참고용)
+  isActive       Boolean  @default(true) // 소프트 삭제: 목록에서만 숨김, 기존 데이터는 유지
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  enrollments Enrollment[]
+}
+
+// 학생
+model Student {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String?
+  memo      String?
+  createdAt DateTime @default(now())
+
+  enrollments Enrollment[]
+}
+
+// 학생별 수강 등록 (학생 x 과정)
+model Enrollment {
+  id           String   @id @default(cuid())
+  studentId    String
+  student      Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  courseTypeId String
+  courseType   CourseType @relation(fields: [courseTypeId], references: [id])
+
+  price         Int      // 등록 시점 스냅샷 (CourseType 기본가에서 자동입력 후 수동 조정 가능)
+  totalSessions Int      // 총 회차수
+  paidAmount    Int      @default(0) // 입금액
+  memo          String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sessions ClassSession[]
+
+  @@index([studentId])
+  @@index([courseTypeId])
+}
+
+enum SessionStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELED
+}
+
+// 실제 수업 일정 (캘린더에 표시되는 단위)
+model ClassSession {
+  id           String   @id @default(cuid())
+  enrollmentId String
+  enrollment   Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
+  teacherId    String
+  teacher      Teacher  @relation(fields: [teacherId], references: [id])
+  roomId       String
+  room         Room     @relation(fields: [roomId], references: [id])
+
+  date         DateTime // 날짜 (시간 제외, 로컬 자정 기준)
+  startTime    String   // "HH:mm"
+  endTime      String   // "HH:mm"
+  sessionNumber Int?    // 회차 (1/8 등)
+  status       SessionStatus @default(SCHEDULED)
+  memo         String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([teacherId, date])
+  @@index([roomId, date])
+  @@index([enrollmentId])
+}
