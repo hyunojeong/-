@@ -8,8 +8,8 @@ const prisma = new PrismaClient({ adapter });
 
 async function main() {
   const teachers = [
-    { name: "원장", color: "#2563eb" },
-    { name: "스피치 선생님", color: "#db2777" },
+    { name: "원장", color: "#2563eb", payRate: 0 },
+    { name: "스피치 선생님", color: "#db2777", payRate: 30000 },
   ];
   for (const t of teachers) {
     await prisma.teacher.upsert({

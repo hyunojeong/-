@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: "/", label: "캘린더" },
   { href: "/students", label: "학생" },
   { href: "/course-types", label: "과정 관리" },
+  { href: "/payroll", label: "강의료 정산" },
 ];
 
 export default function NavBar() {

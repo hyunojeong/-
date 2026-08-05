@@ -16,6 +16,7 @@ model Teacher {
   name      String
   color     String   @default("#2563eb") // 캘린더에서 강사 구분용
   isActive  Boolean  @default(true)
+  payRate   Int      @default(0) // 강의료 정산용 회차당 고정 금액 (원)
   createdAt DateTime @default(now())
 
   sessions ClassSession[]
