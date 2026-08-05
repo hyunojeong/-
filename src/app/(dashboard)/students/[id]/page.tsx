@@ -226,7 +226,11 @@ export default function StudentDetailPage({ params }: { params: Promise<{ id: st
                   onBlur={(ev) => updatePaidAmount(e.id, Number(ev.target.value))}
                   className="w-28 rounded-md border border-slate-200 px-2 py-1 text-sm outline-none focus:border-blue-500"
                 />
-                {remaining <= 0 ? (
+                {e.price === 0 ? (
+                  <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-500">
+                    금액 미입력
+                  </span>
+                ) : remaining <= 0 ? (
                   <span className="rounded-full bg-green-50 px-2 py-0.5 text-xs font-medium text-green-700">
                     완납
                   </span>

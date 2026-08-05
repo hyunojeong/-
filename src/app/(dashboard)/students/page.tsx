@@ -167,6 +167,10 @@ export default function StudentsPage() {
                   <td className="px-4 py-3 text-slate-600">
                     {s.enrollments.length === 0 ? (
                       "-"
+                    ) : totalPrice === 0 ? (
+                      <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-500">
+                        금액 미입력
+                      </span>
                     ) : totalPaid >= totalPrice ? (
                       <span className="rounded-full bg-green-50 px-2 py-0.5 text-xs font-medium text-green-700">
                         완납 ({formatKRW(totalPrice)})
