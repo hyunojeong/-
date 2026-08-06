@@ -4,9 +4,10 @@
 // 입력 JSON은 각 항목이 아래 형태여야 합니다:
 // { date, startTime, endTime, studentName, canonicalCourse, rawCourseLabel,
 //   sessionNumber, room: "A"|"B"|null, teacher, memo }
+import "dotenv/config";
 import { readFileSync } from "node:fs";
 import { PrismaClient } from "../src/generated/prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { PrismaPg } from "@prisma/adapter-pg";
 
 const filePath = process.argv[2];
 if (!filePath) {
@@ -16,7 +17,7 @@ if (!filePath) {
 
 const rows = JSON.parse(readFileSync(filePath, "utf-8"));
 
-const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL ?? "file:./dev.db" });
+const adapter = new PrismaPg(process.env.DATABASE_URL);
 const prisma = new PrismaClient({ adapter });
 
 const NEW_COURSE_TYPES = [
