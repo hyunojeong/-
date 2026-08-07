@@ -28,6 +28,8 @@ type SessionApiItem = {
   };
 };
 
+const NO_SESSION_NUMBER_COURSES = new Set(["기타", "원데이"]);
+
 export default function CalendarPage() {
   const [teachers, setTeachers] = useState<Teacher[]>([]);
   const [rooms, setRooms] = useState<Room[]>([]);
@@ -125,11 +127,14 @@ export default function CalendarPage() {
 
   function renderEventContent(arg: EventContentArg) {
     const s: SessionApiItem = arg.event.extendedProps.session;
+    const courseName = s.enrollment.courseType.name;
+    const showSessionNumber = s.sessionNumber != null && !NO_SESSION_NUMBER_COURSES.has(courseName);
+    const courseLabel = showSessionNumber ? `${courseName}-${s.sessionNumber}` : courseName;
     return (
       <div className="flex flex-wrap items-baseline gap-x-1 gap-y-0 overflow-hidden px-1">
         <span className="shrink-0 text-[11px] text-slate-700">{arg.timeText}</span>
         <span className="text-[11px] font-medium text-slate-900">{s.enrollment.student.name}</span>
-        <span className="text-[9px] text-slate-500">({s.enrollment.courseType.name})</span>
+        <span className="text-[9px] text-slate-500">({courseLabel})</span>
       </div>
     );
   }
