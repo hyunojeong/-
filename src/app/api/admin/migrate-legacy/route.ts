@@ -1,5 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
 import { prisma } from "@/lib/prisma";
+import { SESSION_COOKIE, verifySessionToken } from "@/lib/auth";
+import legacyRows from "./data.json";
 
 // 배포 후 1회성 데이터 이관용 임시 엔드포인트. 사용 후 삭제 예정.
 
@@ -39,8 +42,11 @@ type LegacyRow = {
   memo?: string | null;
 };
 
-export async function POST(req: NextRequest) {
-  if (req.headers.get("x-migration-secret") !== process.env.AUTH_SECRET) {
+export async function GET() {
+  const cookieStore = await cookies();
+  const token = cookieStore.get(SESSION_COOKIE)?.value;
+  const session = token ? await verifySessionToken(token) : null;
+  if (!session) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -62,7 +68,7 @@ export async function POST(req: NextRequest) {
     unknownRoom = await prisma.room.create({ data: { name: "미정 (엑셀 이관)", isActive: false } });
   }
 
-  const rows: LegacyRow[] = await req.json();
+  const rows = legacyRows as LegacyRow[];
 
   const teachers = await prisma.teacher.findMany();
   const teacherByName = Object.fromEntries(teachers.map((t) => [t.name, t]));
