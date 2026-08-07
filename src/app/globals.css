@@ -25,18 +25,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 월간 캘린더 칸에서 이벤트 제목이 잘리지 않고 줄바꿈되도록 */
+/* 월간 캘린더 칸에서 이벤트 내용이 잘리지 않고 줄바꿈되도록 */
 .fc-daygrid-event {
   white-space: normal !important;
   align-items: flex-start;
 }
 
-.fc-daygrid-event .fc-event-title {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-}
-
-.fc-daygrid-event .fc-event-time {
-  flex-shrink: 0;
+/* 스피치 선생님 수업은 배경을 음영 처리해서 구분되도록 */
+.fc-daygrid-event.speech-teacher-event {
+  background-color: #fce7f3;
+  border-radius: 4px;
 }

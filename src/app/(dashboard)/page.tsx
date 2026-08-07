@@ -5,12 +5,11 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
-import type { EventClickArg, EventInput } from "@fullcalendar/core";
+import type { EventClickArg, EventContentArg, EventInput } from "@fullcalendar/core";
 import SessionModal, { SessionModalData } from "@/components/SessionModal";
 
 type Teacher = { id: string; name: string; color: string };
 type Room = { id: string; name: string };
-type SessionRoom = Room & { isActive: boolean };
 
 type SessionApiItem = {
   id: string;
@@ -20,7 +19,7 @@ type SessionApiItem = {
   sessionNumber: number | null;
   status: "SCHEDULED" | "COMPLETED" | "CANCELED";
   teacher: Teacher;
-  room: SessionRoom;
+  room: Room;
   enrollment: {
     id: string;
     totalSessions: number;
@@ -62,13 +61,9 @@ export default function CalendarPage() {
       );
       const mapped: EventInput[] = filtered.map((s) => ({
         id: s.id,
-        title: s.room.isActive
-          ? `${s.enrollment.student.name} (${s.enrollment.courseType.name}) - ${s.room.name}`
-          : `${s.enrollment.student.name} (${s.enrollment.courseType.name})`,
+        title: `${s.enrollment.student.name} (${s.enrollment.courseType.name})`,
         start: `${s.date.slice(0, 10)}T${s.startTime}`,
         end: `${s.date.slice(0, 10)}T${s.endTime}`,
-        backgroundColor: s.teacher.color,
-        borderColor: s.teacher.color,
         extendedProps: { session: s },
       }));
       setEvents(mapped);
@@ -126,6 +121,22 @@ export default function CalendarPage() {
         status: s.status,
       },
     });
+  }
+
+  function renderEventContent(arg: EventContentArg) {
+    const s: SessionApiItem = arg.event.extendedProps.session;
+    return (
+      <div className="flex flex-wrap items-baseline gap-x-1 gap-y-0 overflow-hidden px-1">
+        <span className="shrink-0 text-[11px] text-slate-700">{arg.timeText}</span>
+        <span className="text-[11px] font-medium text-slate-900">{s.enrollment.student.name}</span>
+        <span className="text-[9px] text-slate-500">({s.enrollment.courseType.name})</span>
+      </div>
+    );
+  }
+
+  function eventClassNames(arg: EventContentArg) {
+    const s: SessionApiItem = arg.event.extendedProps.session;
+    return s.teacher.name === "스피치 선생님" ? ["speech-teacher-event"] : [];
   }
 
   async function reloadEvents() {
@@ -195,6 +206,8 @@ export default function CalendarPage() {
           locale="ko"
           height="auto"
           events={events}
+          eventContent={renderEventContent}
+          eventClassNames={eventClassNames}
           datesSet={handleDatesSet}
           dateClick={handleDateClick}
           eventClick={handleEventClick}
