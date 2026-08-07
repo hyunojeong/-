@@ -10,6 +10,7 @@ import SessionModal, { SessionModalData } from "@/components/SessionModal";
 
 type Teacher = { id: string; name: string; color: string };
 type Room = { id: string; name: string };
+type SessionRoom = Room & { isActive: boolean };
 
 type SessionApiItem = {
   id: string;
@@ -19,7 +20,7 @@ type SessionApiItem = {
   sessionNumber: number | null;
   status: "SCHEDULED" | "COMPLETED" | "CANCELED";
   teacher: Teacher;
-  room: Room;
+  room: SessionRoom;
   enrollment: {
     id: string;
     totalSessions: number;
@@ -61,7 +62,9 @@ export default function CalendarPage() {
       );
       const mapped: EventInput[] = filtered.map((s) => ({
         id: s.id,
-        title: `${s.enrollment.student.name} (${s.enrollment.courseType.name}) - ${s.room.name}`,
+        title: s.room.isActive
+          ? `${s.enrollment.student.name} (${s.enrollment.courseType.name}) - ${s.room.name}`
+          : `${s.enrollment.student.name} (${s.enrollment.courseType.name})`,
         start: `${s.date.slice(0, 10)}T${s.startTime}`,
         end: `${s.date.slice(0, 10)}T${s.endTime}`,
         backgroundColor: s.teacher.color,
