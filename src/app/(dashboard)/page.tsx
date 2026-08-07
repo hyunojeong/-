@@ -61,7 +61,7 @@ export default function CalendarPage() {
       );
       const mapped: EventInput[] = filtered.map((s) => ({
         id: s.id,
-        title: `${s.startTime} ${s.enrollment.student.name} (${s.enrollment.courseType.name}) - ${s.room.name}`,
+        title: `${s.enrollment.student.name} (${s.enrollment.courseType.name}) - ${s.room.name}`,
         start: `${s.date.slice(0, 10)}T${s.startTime}`,
         end: `${s.date.slice(0, 10)}T${s.endTime}`,
         backgroundColor: s.teacher.color,
