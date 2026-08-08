@@ -73,9 +73,26 @@ model Enrollment {
   updatedAt DateTime @updatedAt
 
   sessions ClassSession[]
+  payments Payment[]
 
   @@index([studentId])
   @@index([courseTypeId])
+}
+
+// 학생이 실제로 입금한 내역 (예약금/잔금 분할 입금 추적용)
+model Payment {
+  id           String     @id @default(cuid())
+  enrollmentId String
+  enrollment   Enrollment @relation(fields: [enrollmentId], references: [id], onDelete: Cascade)
+
+  amount Int // 입금액 (원)
+  paidAt DateTime // 입금일
+  memo   String?
+
+  createdAt DateTime @default(now())
+
+  @@index([enrollmentId])
+  @@index([paidAt])
 }
 
 enum SessionStatus {

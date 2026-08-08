@@ -19,6 +19,38 @@ export async function GET(req: NextRequest) {
   const from = new Date(Date.UTC(year, mon - 1, 1));
   const to = new Date(Date.UTC(year, mon, 0)); // 해당 월의 마지막 날
 
+  // 원장은 회차당 정액 급여가 아니라 실제 입금(매출) 기준으로 정산
+  if (teacher.name === "원장") {
+    const [payments, sessions] = await Promise.all([
+      prisma.payment.findMany({
+        where: { paidAt: { gte: from, lte: to } },
+        include: { enrollment: { include: { student: true, courseType: true } } },
+        orderBy: { paidAt: "desc" },
+      }),
+      prisma.classSession.findMany({
+        where: { teacherId, status: { not: "CANCELED" }, date: { gte: from, lte: to } },
+        include: { enrollment: true },
+      }),
+    ]);
+
+    const revenue = payments.reduce((sum, p) => sum + p.amount, 0);
+    const totalSessions = sessions.length;
+    const estimatedWorkValue = sessions.reduce((sum, s) => {
+      const perSession = s.enrollment.totalSessions > 0 ? s.enrollment.price / s.enrollment.totalSessions : 0;
+      return sum + Math.round(perSession);
+    }, 0);
+
+    return NextResponse.json({
+      mode: "owner",
+      teacher,
+      month,
+      revenue,
+      payments,
+      totalSessions,
+      estimatedWorkValue,
+    });
+  }
+
   const sessions = await prisma.classSession.findMany({
     where: {
       teacherId,
@@ -36,6 +68,7 @@ export async function GET(req: NextRequest) {
   const totalPay = totalSessions * teacher.payRate;
 
   return NextResponse.json({
+    mode: "staff",
     teacher,
     month,
     sessions,

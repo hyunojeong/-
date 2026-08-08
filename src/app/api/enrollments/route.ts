@@ -43,5 +43,12 @@ export async function POST(req: NextRequest) {
     data: { studentId, courseTypeId, totalSessions, price, paidAmount, memo },
     include: { courseType: true },
   });
+
+  if (paidAmount > 0) {
+    await prisma.payment.create({
+      data: { enrollmentId: enrollment.id, amount: paidAmount, paidAt: new Date(), memo: "최초 등록 시 입금" },
+    });
+  }
+
   return NextResponse.json(enrollment, { status: 201 });
 }

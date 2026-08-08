@@ -12,6 +12,7 @@ export async function GET(_req: NextRequest, { params }: { params: Promise<{ id:
         include: {
           courseType: true,
           sessions: { orderBy: { date: "asc" } },
+          payments: { orderBy: { paidAt: "desc" } },
         },
       },
     },

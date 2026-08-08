@@ -5,7 +5,6 @@ import { prisma } from "@/lib/prisma";
 const updateSchema = z.object({
   price: z.number().int().nonnegative().optional(),
   totalSessions: z.number().int().positive().optional(),
-  paidAmount: z.number().int().nonnegative().optional(),
   memo: z.string().trim().optional().nullable(),
 });
 
