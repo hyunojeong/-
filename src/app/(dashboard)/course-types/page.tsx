@@ -7,7 +7,6 @@ type CourseType = {
   name: string;
   defaultPrice: number;
   defaultSessions: number | null;
-  isActive: boolean;
 };
 
 function formatKRW(n: number) {
@@ -26,7 +25,7 @@ export default function CourseTypesPage() {
 
   async function load() {
     setLoading(true);
-    const res = await fetch("/api/course-types?includeInactive=1");
+    const res = await fetch("/api/course-types");
     const data = await res.json();
     setCourseTypes(data);
     setLoading(false);
@@ -64,15 +63,6 @@ export default function CourseTypesPage() {
     }
   }
 
-  async function toggleActive(ct: CourseType) {
-    await fetch(`/api/course-types/${ct.id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ isActive: !ct.isActive }),
-    });
-    await load();
-  }
-
   async function updatePrice(ct: CourseType, newPrice: number) {
     if (Number.isNaN(newPrice) || newPrice < 0) return;
     await fetch(`/api/course-types/${ct.id}`, {
@@ -83,14 +73,33 @@ export default function CourseTypesPage() {
     await load();
   }
 
+  async function updateSessions(ct: CourseType, newSessions: number) {
+    if (Number.isNaN(newSessions) || newSessions < 1) return;
+    await fetch(`/api/course-types/${ct.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ defaultSessions: newSessions }),
+    });
+    await load();
+  }
+
+  async function handleDelete(ct: CourseType) {
+    if (!confirm(`"${ct.name}" 과정을 삭제할까요?`)) return;
+    const res = await fetch(`/api/course-types/${ct.id}`, { method: "DELETE" });
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      alert(data.error ?? "삭제에 실패했습니다.");
+      return;
+    }
+    await load();
+  }
+
   return (
     <div className="space-y-8">
       <div>
         <h1 className="text-lg font-semibold text-slate-900">과정 관리</h1>
         <p className="mt-1 text-sm text-slate-500">
-          과정을 추가·비활성화하고 기본 강의료를 관리합니다. 비활성화된 과정은
-          새 등록 시 선택 목록에서만 제외되고, 기존 학생 데이터는 그대로
-          유지됩니다.
+          과정을 추가·삭제하고 기본 강의료와 회차수를 관리합니다.
         </p>
       </div>
 
@@ -152,27 +161,26 @@ export default function CourseTypesPage() {
               <th className="px-4 py-3">과정명</th>
               <th className="px-4 py-3">기본 패키지 총액</th>
               <th className="px-4 py-3">기본 회차수</th>
-              <th className="px-4 py-3">상태</th>
               <th className="px-4 py-3" />
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
             {loading && (
               <tr>
-                <td colSpan={5} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={4} className="px-4 py-6 text-center text-slate-400">
                   불러오는 중...
                 </td>
               </tr>
             )}
             {!loading && courseTypes.length === 0 && (
               <tr>
-                <td colSpan={5} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={4} className="px-4 py-6 text-center text-slate-400">
                   등록된 과정이 없습니다.
                 </td>
               </tr>
             )}
             {courseTypes.map((ct) => (
-              <tr key={ct.id} className={ct.isActive ? "" : "opacity-50"}>
+              <tr key={ct.id}>
                 <td className="px-4 py-3 font-medium text-slate-900">
                   {ct.name}
                 </td>
@@ -187,26 +195,21 @@ export default function CourseTypesPage() {
                     ({formatKRW(ct.defaultPrice)})
                   </span>
                 </td>
-                <td className="px-4 py-3 text-slate-600">
-                  {ct.defaultSessions ?? "-"}
-                </td>
                 <td className="px-4 py-3">
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${
-                      ct.isActive
-                        ? "bg-green-50 text-green-700"
-                        : "bg-slate-100 text-slate-500"
-                    }`}
-                  >
-                    {ct.isActive ? "사용중" : "비활성화"}
-                  </span>
+                  <input
+                    type="number"
+                    min={1}
+                    defaultValue={ct.defaultSessions ?? ""}
+                    onBlur={(e) => updateSessions(ct, Number(e.target.value))}
+                    className="w-20 rounded-md border border-slate-200 px-2 py-1 text-sm outline-none focus:border-blue-500"
+                  />
                 </td>
                 <td className="px-4 py-3 text-right">
                   <button
-                    onClick={() => toggleActive(ct)}
-                    className="text-xs font-medium text-blue-600 hover:underline"
+                    onClick={() => handleDelete(ct)}
+                    className="text-xs font-medium text-red-600 hover:underline"
                   >
-                    {ct.isActive ? "비활성화" : "다시 활성화"}
+                    삭제
                   </button>
                 </td>
               </tr>
