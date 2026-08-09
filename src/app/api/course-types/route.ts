@@ -26,7 +26,15 @@ export async function POST(req: NextRequest) {
 
   const existing = await prisma.courseType.findUnique({ where: { name: parsed.data.name } });
   if (existing) {
-    return NextResponse.json({ error: "이미 존재하는 과정명입니다." }, { status: 409 });
+    if (existing.isActive) {
+      return NextResponse.json({ error: "이미 존재하는 과정명입니다." }, { status: 409 });
+    }
+    // 예전에 삭제(숨김) 처리된 과정과 이름이 같으면 새 값으로 되살린다
+    const revived = await prisma.courseType.update({
+      where: { id: existing.id },
+      data: { ...parsed.data, isActive: true },
+    });
+    return NextResponse.json(revived, { status: 201 });
   }
 
   const courseType = await prisma.courseType.create({ data: parsed.data });
