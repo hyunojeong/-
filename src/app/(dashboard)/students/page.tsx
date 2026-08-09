@@ -12,8 +12,18 @@ type StudentListItem = {
     price: number;
     paidAmount: number;
     courseType: { name: string };
+    isCurrentMonth: boolean;
   }[];
 };
+
+// 결제 현황 표기 기준이 되는 "현재 수강 중인 과정": 이번 달에 진행된 과정이 있으면 그중 가장
+// 최근 등록건, 없으면 가장 최근에 등록한 과정을 사용한다.
+function currentEnrollment(enrollments: StudentListItem["enrollments"]) {
+  if (enrollments.length === 0) return null;
+  const thisMonth = enrollments.filter((e) => e.isCurrentMonth);
+  const pool = thisMonth.length > 0 ? thisMonth : enrollments;
+  return pool[pool.length - 1];
+}
 
 function formatKRW(n: number) {
   return n.toLocaleString("ko-KR") + "원";
@@ -125,7 +135,6 @@ export default function StudentsPage() {
           <thead className="bg-slate-50 text-left text-xs font-medium text-slate-500">
             <tr>
               <th className="px-4 py-3">이름</th>
-              <th className="px-4 py-3">연락처</th>
               <th className="px-4 py-3">수강 과정</th>
               <th className="px-4 py-3">결제 현황</th>
             </tr>
@@ -133,21 +142,21 @@ export default function StudentsPage() {
           <tbody className="divide-y divide-slate-100">
             {loading && (
               <tr>
-                <td colSpan={4} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={3} className="px-4 py-6 text-center text-slate-400">
                   불러오는 중...
                 </td>
               </tr>
             )}
             {!loading && students.length === 0 && (
               <tr>
-                <td colSpan={4} className="px-4 py-6 text-center text-slate-400">
+                <td colSpan={3} className="px-4 py-6 text-center text-slate-400">
                   등록된 학생이 없습니다.
                 </td>
               </tr>
             )}
             {students.map((s) => {
-              const totalPrice = s.enrollments.reduce((sum, e) => sum + e.price, 0);
-              const totalPaid = s.enrollments.reduce((sum, e) => sum + e.paidAmount, 0);
+              const current = currentEnrollment(s.enrollments);
+              const remaining = current ? current.price - current.paidAmount : 0;
               return (
                 <tr key={s.id} className="hover:bg-slate-50">
                   <td className="px-4 py-3">
@@ -158,26 +167,25 @@ export default function StudentsPage() {
                       {s.name}
                     </Link>
                   </td>
-                  <td className="px-4 py-3 text-slate-600">{s.phone ?? "-"}</td>
                   <td className="px-4 py-3 text-slate-600">
                     {s.enrollments.length === 0
                       ? "-"
-                      : s.enrollments.map((e) => e.courseType.name).join(", ")}
+                      : s.enrollments.map((e) => e.courseType.name).join(" - ")}
                   </td>
                   <td className="px-4 py-3 text-slate-600">
-                    {s.enrollments.length === 0 ? (
+                    {!current ? (
                       "-"
-                    ) : totalPrice === 0 ? (
+                    ) : current.price === 0 ? (
                       <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-500">
                         금액 미입력
                       </span>
-                    ) : totalPaid >= totalPrice ? (
+                    ) : remaining <= 0 ? (
                       <span className="rounded-full bg-green-50 px-2 py-0.5 text-xs font-medium text-green-700">
-                        완납 ({formatKRW(totalPrice)})
+                        완납 ({formatKRW(current.price)})
                       </span>
                     ) : (
                       <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-700">
-                        잔금 {formatKRW(totalPrice - totalPaid)}
+                        잔금 {formatKRW(remaining)}
                       </span>
                     )}
                   </td>

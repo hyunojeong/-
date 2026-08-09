@@ -12,14 +12,42 @@ export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get("q")?.trim();
   const students = await prisma.student.findMany({
     where: q ? { name: { contains: q } } : undefined,
-    orderBy: { createdAt: "desc" },
     include: {
       enrollments: {
-        select: { id: true, price: true, paidAmount: true, courseType: { select: { name: true } } },
+        orderBy: { createdAt: "asc" },
+        select: {
+          id: true,
+          price: true,
+          paidAmount: true,
+          courseType: { select: { name: true } },
+          sessions: { where: { status: { not: "CANCELED" } }, select: { date: true } },
+        },
       },
     },
   });
-  return NextResponse.json(students);
+
+  const now = new Date();
+  const monthStart = new Date(Date.UTC(now.getFullYear(), now.getMonth(), 1));
+  const monthEnd = new Date(Date.UTC(now.getFullYear(), now.getMonth() + 1, 0));
+
+  const withActivity = students.map((s) => {
+    const enrollments = s.enrollments.map((e) => ({
+      ...e,
+      isCurrentMonth: e.sessions.some((sess) => sess.date >= monthStart && sess.date <= monthEnd),
+    }));
+    return {
+      ...s,
+      enrollments,
+      isActiveNow: enrollments.some((e) => e.isCurrentMonth),
+    };
+  });
+
+  withActivity.sort((a, b) => {
+    if (a.isActiveNow !== b.isActiveNow) return a.isActiveNow ? -1 : 1;
+    return a.name.localeCompare(b.name, "ko");
+  });
+
+  return NextResponse.json(withActivity);
 }
 
 export async function POST(req: NextRequest) {
