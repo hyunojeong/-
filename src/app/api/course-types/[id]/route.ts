@@ -29,10 +29,9 @@ export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ 
   try {
     await prisma.courseType.delete({ where: { id } });
   } catch {
-    return NextResponse.json(
-      { error: "이 과정을 사용 중인 학생 등록 내역이 있어 삭제할 수 없습니다." },
-      { status: 409 }
-    );
+    // 과거 학생 등록 내역이 남아있어 완전히 지울 수 없는 경우: 기존 데이터는 보존하고
+    // 목록/신규 등록 선택지에서만 숨긴다 (사용자에게는 "삭제"와 동일하게 보임)
+    await prisma.courseType.update({ where: { id }, data: { isActive: false } });
   }
   return NextResponse.json({ ok: true });
 }
