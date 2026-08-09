@@ -17,11 +17,15 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
     return NextResponse.json({ error: parsed.error.issues[0]?.message ?? "입력값이 올바르지 않습니다." }, { status: 400 });
   }
 
-  const courseType = await prisma.courseType.update({
-    where: { id },
-    data: parsed.data,
-  });
-  return NextResponse.json(courseType);
+  try {
+    const courseType = await prisma.courseType.update({
+      where: { id },
+      data: parsed.data,
+    });
+    return NextResponse.json(courseType);
+  } catch {
+    return NextResponse.json({ error: "이미 존재하는 과정명입니다." }, { status: 409 });
+  }
 }
 
 export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {

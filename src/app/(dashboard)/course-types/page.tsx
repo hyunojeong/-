@@ -63,6 +63,20 @@ export default function CourseTypesPage() {
     }
   }
 
+  async function updateName(ct: CourseType, newName: string) {
+    if (!newName.trim() || newName === ct.name) return;
+    const res = await fetch(`/api/course-types/${ct.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: newName.trim() }),
+    });
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      alert(data.error ?? "수정에 실패했습니다.");
+    }
+    await load();
+  }
+
   async function updatePrice(ct: CourseType, newPrice: number) {
     if (Number.isNaN(newPrice) || newPrice < 0) return;
     await fetch(`/api/course-types/${ct.id}`, {
@@ -182,7 +196,12 @@ export default function CourseTypesPage() {
             {courseTypes.map((ct) => (
               <tr key={ct.id}>
                 <td className="px-4 py-3 font-medium text-slate-900">
-                  {ct.name}
+                  <input
+                    type="text"
+                    defaultValue={ct.name}
+                    onBlur={(e) => updateName(ct, e.target.value)}
+                    className="w-32 rounded-md border border-slate-200 px-2 py-1 text-sm outline-none focus:border-blue-500"
+                  />
                 </td>
                 <td className="px-4 py-3">
                   <input
