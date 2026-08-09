@@ -131,10 +131,14 @@ export default function CalendarPage() {
     const showSessionNumber = s.sessionNumber != null && !NO_SESSION_NUMBER_COURSES.has(courseName);
     const courseLabel = showSessionNumber ? `${courseName}-${s.sessionNumber}` : courseName;
     return (
-      <div className="flex flex-wrap items-baseline gap-x-1 gap-y-0 overflow-hidden px-1">
-        <span className="shrink-0 text-[11px] text-slate-700">{arg.timeText}</span>
-        <span className="text-[11px] font-medium text-slate-900">{s.enrollment.student.name}</span>
-        <span className="text-[9px] text-slate-500">({courseLabel})</span>
+      <div className="flex flex-nowrap items-baseline gap-x-1 overflow-hidden whitespace-nowrap px-1">
+        <span className="shrink-0 text-[12px] text-slate-700">{arg.timeText}</span>
+        <span className="overflow-hidden text-ellipsis text-[12px] font-semibold text-slate-900">
+          {s.enrollment.student.name}
+        </span>
+        <span className="shrink-0 overflow-hidden text-ellipsis text-[10px] text-slate-500">
+          ({courseLabel})
+        </span>
       </div>
     );
   }
