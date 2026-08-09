@@ -212,6 +212,7 @@ export default function CalendarPage() {
             center: "title",
             right: "dayGridMonth,timeGridWeek",
           }}
+          eventTimeFormat={{ hour: "2-digit", minute: "2-digit", hour12: false }}
           locale="ko"
           height="auto"
           events={events}
