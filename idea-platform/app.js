@@ -31,7 +31,13 @@ async function init() {
     document.querySelectorAll(".check-row input").forEach((el) => (el.checked = false));
     document.querySelectorAll(".chip").forEach((el) => el.classList.remove("active"));
     render();
+    if (typeof renderKnowledge === "function") renderKnowledge();
   });
+}
+
+function renderAll() {
+  render();
+  if (typeof renderKnowledge === "function") renderKnowledge();
 }
 
 function renderPlantFilters() {
@@ -59,7 +65,7 @@ function renderPlantFilters() {
       checkbox.addEventListener("change", () => {
         if (checkbox.checked) state.selectedPlants.add(plant.id);
         else state.selectedPlants.delete(plant.id);
-        render();
+        renderAll();
       });
 
       label.appendChild(checkbox);

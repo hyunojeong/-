@@ -1,0 +1,6616 @@
+{
+  "docs": [
+    {
+      "id": "sample-01",
+      "title": "[샘플] BTX 방향족 추출 공정 운전 개요",
+      "plants": [
+        "btx"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다. VDI 반입 후에는 이 폴더의 샘플 문서를 실제 공정 매뉴얼/Knowledge book 발췌로 교체해야 합니다.  BTX(벤젠·톨루엔·자일렌) 추출 공정은 일반적으로 추출증류(Extractive Distillation) 또는 액액추출(Liqu…"
+    },
+    {
+      "id": "sample-02",
+      "title": "[샘플] PX(파라자일렌) 이성질화·분리 공정 개요",
+      "plants": [
+        "px"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  파라자일렌은 자일렌 이성질체 중 비점차가 매우 작아(파라/메타/오르토 자일렌 비점이 서로 근접) 일반 증류로는 분리가 어렵고, 흡착분리(Parex/Sorbex 공정) 또는 결정화 공정을 사용한다. 이성질화(Isomerization) 반응기를…"
+    },
+    {
+      "id": "sample-03",
+      "title": "[샘플] Naphtha Cracker(NCC) 열분해로 운전 개요",
+      "plants": [
+        "cracker"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  나프타 분해로는 코일 내 체류시간을 짧게, 온도는 높게 유지해 에틸렌·프로필렌 수율을 높이는 방향으로 운전한다. 코일 표면에 코크스가 쌓이면 열전달이 저하되고 압력강하가 커져 주기적으로 디코킹(Decoking)이 필요하다. 급냉(Quench…"
+    },
+    {
+      "id": "sample-04",
+      "title": "[샘플] 부타디엔 추출 공정 개요",
+      "plants": [
+        "butadiene"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  C4 유분에서 1,3-부타디엔을 분리하는 대표적 방법은 극성 용제(NMP, DMF, ACN 등)를 이용한 추출증류다. 부타디엔과 나머지 C4 성분(부탄, 부텐류)의 비점차가 작아 일반 증류로는 분리가 어렵기 때문이다. 용제 재생탑의 리보일러…"
+    },
+    {
+      "id": "sample-05",
+      "title": "[샘플] LLDPE/HDPE 중합·압출 공정 개요",
+      "plants": [
+        "lldpe",
+        "hdpe"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  LLDPE/HDPE는 통상 슬러리 루프(Loop Slurry) 또는 기상(Gas Phase) 반응기에서 중합되며, 반응열 제거를 위한 냉각 계통과 미반응 모노머·희석제 회수 계통의 에너지 소비가 크다. 후단 압출·펠레타이징 공정에서는 구동모…"
+    },
+    {
+      "id": "sample-06",
+      "title": "[샘플] PP(폴리프로필렌) 중합·건조 공정 개요",
+      "plants": [
+        "pp"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  PP는 벌크(Bulk) 또는 기상 공정으로 중합되며, 파우더 상태의 폴리머에서 미반응 모노머와 VOC를 제거하는 건조/탈기(Degassing) 공정이 별도로 필요하다. 이 구간에서 가열용 스팀과 퍼지용 질소가 상당량 소비된다.  일반적인 점…"
+    },
+    {
+      "id": "sample-07",
+      "title": "[샘플] Nexlene(용액중합) 공정 개요",
+      "plants": [
+        "nexlene"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  용액중합(Solution Process) 기반 메탈로센 폴리에틸렌/폴리올레핀 플라스토머 공정은 고온·고압에서 용제(주로 탄화수소 용제)에 폴리머를 녹인 상태로 반응시킨 뒤, 후단에서 용제·미반응 모노머를 분리·회수한다. 용제 회수탑의 리보일…"
+    },
+    {
+      "id": "sample-08",
+      "title": "[샘플] 전 공장 공통 Utility 계통(스팀·냉각수·질소) 운전 개요",
+      "plants": [
+        "utility"
+      ],
+      "excerpt": "※ 이 문서는 사내 지식 검색 파이프라인 데모용 예시입니다. 실제 사내 매뉴얼이 아니며, 일반적인 공정공학 교과서 수준의 통념적 설명만 담고 있습니다.  Utility 계통은 각 플랜트에 고압/중압/저압 스팀, 냉각수, 질소·계장공기 등을 공급하는 공통 인프라다. 개별 플랜트 최적화만큼이나 utility 계통 자체의 배관 보온 상태, 냉각탑 팬 제어 방식, 보일러 연소공기 제어가 전체 원가에…"
+    }
+  ],
+  "docLengths": {
+    "sample-01": 297,
+    "sample-02": 265,
+    "sample-03": 285,
+    "sample-04": 263,
+    "sample-05": 272,
+    "sample-06": 245,
+    "sample-07": 297,
+    "sample-08": 286
+  },
+  "avgDocLength": 276.25,
+  "totalDocs": 8,
+  "terms": {
+    "이": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 1,
+        "sample-03": 2,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 1
+      }
+    },
+    "문서는": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "문서": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "서는": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 2,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "사내": {
+      "df": 8,
+      "postings": {
+        "sample-01": 4,
+        "sample-02": 4,
+        "sample-03": 4,
+        "sample-04": 4,
+        "sample-05": 4,
+        "sample-06": 4,
+        "sample-07": 4,
+        "sample-08": 4
+      }
+    },
+    "지식": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "검색": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "파이프라인": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "파이": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "이프": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "프라": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "라인": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 2,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "데모용": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "데모": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "모용": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "예시입니다": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "예시": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "시입": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "입니": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "니다": {
+      "df": 8,
+      "postings": {
+        "sample-01": 3,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "실제": {
+      "df": 8,
+      "postings": {
+        "sample-01": 4,
+        "sample-02": 2,
+        "sample-03": 4,
+        "sample-04": 2,
+        "sample-05": 6,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "매뉴얼이": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "매뉴": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "뉴얼": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "얼이": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "아니며": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "아니": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "니며": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "일반적인": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "일반": {
+      "df": 8,
+      "postings": {
+        "sample-01": 3,
+        "sample-02": 5,
+        "sample-03": 2,
+        "sample-04": 4,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "반적": {
+      "df": 8,
+      "postings": {
+        "sample-01": 3,
+        "sample-02": 3,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "적인": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "공정공학": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "공정": {
+      "df": 8,
+      "postings": {
+        "sample-01": 4,
+        "sample-02": 6,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 2,
+        "sample-06": 3,
+        "sample-07": 4,
+        "sample-08": 1
+      }
+    },
+    "정공": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "공학": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "교과서": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "교과": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "과서": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "수준의": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "수준": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "준의": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "통념적": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "통념": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "념적": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "설명만": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "설명": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "명만": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "담고": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "있습니다": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "있습": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "습니": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "vdi": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "반입": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "후에는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "후에": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "에는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "폴더의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "폴더": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "더의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "샘플": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "문서를": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "서를": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "매뉴얼": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "knowledge": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "book": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "발췌로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "발췌": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "췌로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "교체해야": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "교체": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "체해": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "해야": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "합니다": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "합니": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "btx": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "벤젠": {
+      "df": 1,
+      "postings": {
+        "sample-01": 3
+      }
+    },
+    "톨루엔": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "톨루": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "루엔": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "자일렌": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 2
+      }
+    },
+    "자일": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 3
+      }
+    },
+    "일렌": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 3
+      }
+    },
+    "추출": {
+      "df": 2,
+      "postings": {
+        "sample-01": 5,
+        "sample-04": 1
+      }
+    },
+    "공정은": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "정은": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "일반적으로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "적으": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1
+      }
+    },
+    "으로": {
+      "df": 6,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 3,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-08": 1
+      }
+    },
+    "추출증류": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "출증": {
+      "df": 2,
+      "postings": {
+        "sample-01": 2,
+        "sample-04": 1
+      }
+    },
+    "증류": {
+      "df": 3,
+      "postings": {
+        "sample-01": 3,
+        "sample-02": 2,
+        "sample-04": 2
+      }
+    },
+    "extractive": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "distillation": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "또는": {
+      "df": 4,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-05": 2,
+        "sample-06": 2
+      }
+    },
+    "액액추출": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "액액": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "액추": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "liquid": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "extraction": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "방식을": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "방식": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-08": 2
+      }
+    },
+    "식을": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "사용한다": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1
+      }
+    },
+    "사용": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 2,
+        "sample-04": 1,
+        "sample-07": 1
+      }
+    },
+    "용한": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "한다": {
+      "df": 5,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-07": 1
+      }
+    },
+    "용제로는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "용제": {
+      "df": 3,
+      "postings": {
+        "sample-01": 5,
+        "sample-04": 8,
+        "sample-07": 12
+      }
+    },
+    "제로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "로는": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1
+      }
+    },
+    "설포란": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "설포": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "포란": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "sulfolane": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "계열이": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "계열": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "열이": {
+      "df": 2,
+      "postings": {
+        "sample-01": 2,
+        "sample-07": 2
+      }
+    },
+    "널리": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "쓰이며": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "쓰이": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "이며": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "재생탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "재생": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 2,
+        "sample-04": 1
+      }
+    },
+    "생탑": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "solvent": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "regeneration": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "column": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "의": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 2,
+        "sample-05": 1
+      }
+    },
+    "리보일러": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-07": 1
+      }
+    },
+    "리보": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-07": 1
+      }
+    },
+    "보일": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "일러": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "열부하가": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "열부": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "부하": {
+      "df": 6,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "하가": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1,
+        "sample-04": 1
+      }
+    },
+    "전체": {
+      "df": 3,
+      "postings": {
+        "sample-01": 2,
+        "sample-04": 2,
+        "sample-08": 2
+      }
+    },
+    "유닛": {
+      "df": 3,
+      "postings": {
+        "sample-01": 2,
+        "sample-04": 3,
+        "sample-07": 2
+      }
+    },
+    "utility": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "소비의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "소비": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 2,
+        "sample-06": 1
+      }
+    },
+    "비의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "상당": {
+      "df": 2,
+      "postings": {
+        "sample-01": 2,
+        "sample-06": 1
+      }
+    },
+    "부분을": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "부분": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "분을": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "차지하는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "차지": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "지하": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "하는": {
+      "df": 6,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-07": 3,
+        "sample-08": 1
+      }
+    },
+    "경우가": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "경우": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "우가": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "많다": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "점검": {
+      "df": 8,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 3
+      }
+    },
+    "포인트": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "포인": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "인트": {
+      "df": 8,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "추출증류탑의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "류탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "탑의": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "환류비가": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "환류": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "류비": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "비가": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "설계치": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "설계": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "계치": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "대비": {
+      "df": 3,
+      "postings": {
+        "sample-01": 4,
+        "sample-05": 2,
+        "sample-07": 2
+      }
+    },
+    "높게": {
+      "df": 4,
+      "postings": {
+        "sample-01": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2
+      }
+    },
+    "유지되고": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "유지": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1,
+        "sample-05": 1
+      }
+    },
+    "지되": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "되고": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1,
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "있는지": {
+      "df": 7,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 2,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 1
+      }
+    },
+    "있는": {
+      "df": 7,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 4,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 1
+      }
+    },
+    "는지": {
+      "df": 7,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 3,
+        "sample-04": 2,
+        "sample-06": 2,
+        "sample-07": 2,
+        "sample-08": 1
+      }
+    },
+    "과잉": {
+      "df": 2,
+      "postings": {
+        "sample-01": 2,
+        "sample-08": 1
+      }
+    },
+    "환류는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "류는": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "스팀": {
+      "df": 6,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-03": 4,
+        "sample-06": 3,
+        "sample-07": 2,
+        "sample-08": 4
+      }
+    },
+    "낭비로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "낭비": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "비로": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "직결": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "순환량이": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "순환": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 2,
+        "sample-05": 2,
+        "sample-07": 1
+      }
+    },
+    "환량": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-05": 1
+      }
+    },
+    "량이": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "원료": {
+      "df": 2,
+      "postings": {
+        "sample-01": 2,
+        "sample-04": 1
+      }
+    },
+    "방향족": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "방향": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1
+      }
+    },
+    "향족": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "함량": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "과다하게": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "과다": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "다하": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-05": 1
+      }
+    },
+    "하게": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "설정되어": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "설정": {
+      "df": 3,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-05": 1
+      }
+    },
+    "정되": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1
+      }
+    },
+    "되어": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 1,
+        "sample-04": 1,
+        "sample-06": 1
+      }
+    },
+    "있지": {
+      "df": 4,
+      "postings": {
+        "sample-01": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-08": 2
+      }
+    },
+    "않은지": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-05": 2,
+        "sample-08": 1
+      }
+    },
+    "않은": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-05": 2,
+        "sample-08": 1
+      }
+    },
+    "은지": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-05": 2,
+        "sample-08": 1
+      }
+    },
+    "벤젠탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "젠탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "톨루엔탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "엔탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "등": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 2
+      }
+    },
+    "후단": {
+      "df": 5,
+      "postings": {
+        "sample-01": 2,
+        "sample-02": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-07": 1
+      }
+    },
+    "증류탑": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "군의": {
+      "df": 1,
+      "postings": {
+        "sample-01": 2
+      }
+    },
+    "열교환망에서": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "열교": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "교환": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "환망": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "망에": {
+      "df": 2,
+      "postings": {
+        "sample-01": 1,
+        "sample-07": 1
+      }
+    },
+    "에서": {
+      "df": 6,
+      "postings": {
+        "sample-01": 1,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 2,
+        "sample-07": 5
+      }
+    },
+    "회수": {
+      "df": 5,
+      "postings": {
+        "sample-01": 2,
+        "sample-03": 2,
+        "sample-05": 4,
+        "sample-07": 5,
+        "sample-08": 2
+      }
+    },
+    "가능한": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "가능": {
+      "df": 5,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 3
+      }
+    },
+    "능한": {
+      "df": 5,
+      "postings": {
+        "sample-01": 1,
+        "sample-04": 1,
+        "sample-06": 1,
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "폐열이": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "폐열": {
+      "df": 4,
+      "postings": {
+        "sample-01": 1,
+        "sample-02": 1,
+        "sample-03": 1,
+        "sample-04": 2
+      }
+    },
+    "남아있는지": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "남아": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "아있": {
+      "df": 1,
+      "postings": {
+        "sample-01": 1
+      }
+    },
+    "파라자일렌은": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "파라": {
+      "df": 1,
+      "postings": {
+        "sample-02": 3
+      }
+    },
+    "라자": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "렌은": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "이성질체": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "이성": {
+      "df": 1,
+      "postings": {
+        "sample-02": 3
+      }
+    },
+    "성질": {
+      "df": 1,
+      "postings": {
+        "sample-02": 3
+      }
+    },
+    "질체": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "중": {
+      "df": 3,
+      "postings": {
+        "sample-02": 1,
+        "sample-06": 1,
+        "sample-08": 1
+      }
+    },
+    "비점차가": {
+      "df": 2,
+      "postings": {
+        "sample-02": 2,
+        "sample-04": 1
+      }
+    },
+    "비점": {
+      "df": 2,
+      "postings": {
+        "sample-02": 3,
+        "sample-04": 1
+      }
+    },
+    "점차": {
+      "df": 2,
+      "postings": {
+        "sample-02": 2,
+        "sample-04": 1
+      }
+    },
+    "차가": {
+      "df": 2,
+      "postings": {
+        "sample-02": 2,
+        "sample-04": 1
+      }
+    },
+    "매우": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "작아": {
+      "df": 2,
+      "postings": {
+        "sample-02": 2,
+        "sample-04": 2
+      }
+    },
+    "메타": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "오르토": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "오르": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "르토": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "비점이": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "점이": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-07": 1
+      }
+    },
+    "서로": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "근접": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "증류로는": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "류로": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "분리가": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "분리": {
+      "df": 5,
+      "postings": {
+        "sample-02": 3,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-06": 1,
+        "sample-07": 2
+      }
+    },
+    "리가": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "어렵고": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "어렵": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "렵고": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "흡착분리": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "흡착": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "착분": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "parex": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "sorbex": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "결정화": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "결정": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "정화": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "공정을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "정을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "이성질화": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "질화": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "isomerization": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "반응기를": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "반응": {
+      "df": 4,
+      "postings": {
+        "sample-02": 2,
+        "sample-05": 6,
+        "sample-06": 1,
+        "sample-07": 3
+      }
+    },
+    "응기": {
+      "df": 3,
+      "postings": {
+        "sample-02": 2,
+        "sample-05": 2,
+        "sample-07": 1
+      }
+    },
+    "기를": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "거쳐": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "평형": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "조성으로": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "조성": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "성으": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "되돌린": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "되돌": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "돌린": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "뒤": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-07": 1
+      }
+    },
+    "재순환하는": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "재순": {
+      "df": 3,
+      "postings": {
+        "sample-02": 1,
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "환하": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "구조가": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "구조": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-06": 1
+      }
+    },
+    "조가": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "일반적이다": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "적이": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "이다": {
+      "df": 3,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1,
+        "sample-05": 1
+      }
+    },
+    "흡착탑": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "착탑": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "adsorption": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "chamber": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "탈착제": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "탈착": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "착제": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "desorbent": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "순환량과": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "량과": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "사용량의": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "용량": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "량의": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "비율": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "반응기": {
+      "df": 3,
+      "postings": {
+        "sample-02": 1,
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "입구": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "예열에": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "예열": {
+      "df": 3,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1,
+        "sample-07": 2
+      }
+    },
+    "열에": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 1
+      }
+    },
+    "필요한": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "필요": {
+      "df": 5,
+      "postings": {
+        "sample-02": 1,
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 2,
+        "sample-06": 1
+      }
+    },
+    "요한": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "열량을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "열량": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-05": 1
+      }
+    },
+    "량을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "폐열로": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "열로": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "대체할": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "대체": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-06": 2
+      }
+    },
+    "체할": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "수": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "작은": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "분리계": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "리계": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "특성상": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "특성": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "성상": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "히트펌프": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "히트": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "트펌": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "펌프": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "결합": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "증류가": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "류가": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "경제성을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "경제": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "제성": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "성을": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "가질": {
+      "df": 1,
+      "postings": {
+        "sample-02": 2
+      }
+    },
+    "컬럼이": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "컬럼": {
+      "df": 2,
+      "postings": {
+        "sample-02": 1,
+        "sample-04": 2
+      }
+    },
+    "럼이": {
+      "df": 1,
+      "postings": {
+        "sample-02": 1
+      }
+    },
+    "나프타": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "나프": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "프타": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "분해로는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "분해": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "해로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "코일": {
+      "df": 1,
+      "postings": {
+        "sample-03": 8
+      }
+    },
+    "내": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-07": 1
+      }
+    },
+    "체류시간을": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "체류": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "류시": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "시간": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "간을": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "짧게": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "온도는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "온도": {
+      "df": 2,
+      "postings": {
+        "sample-03": 2,
+        "sample-05": 1
+      }
+    },
+    "도는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "유지해": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "지해": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "에틸렌": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "에틸": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-07": 1
+      }
+    },
+    "틸렌": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-07": 1
+      }
+    },
+    "프로필렌": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "프로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "로필": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "필렌": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "수율을": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "수율": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "율을": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-07": 1
+      }
+    },
+    "높이는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "높이": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "이는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "방향으로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "향으": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "운전한다": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "운전": {
+      "df": 4,
+      "postings": {
+        "sample-03": 1,
+        "sample-05": 2,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "전한": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "표면에": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "표면": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "면에": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "코크스가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "코크": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "크스": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "스가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "쌓이면": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "쌓이": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "이면": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "열전달이": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "열전": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "전달": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "달이": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "저하되고": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "저하": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "하되": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "압력강하가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "압력": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "력강": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "강하": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "커져": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "주기적으로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "주기": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "기적": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "디코킹": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "디코": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "코킹": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "decoking": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "필요하다": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "요하": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "하다": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "급냉": {
+      "df": 2,
+      "postings": {
+        "sample-03": 4,
+        "sample-04": 2
+      }
+    },
+    "quench": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "계통의": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-05": 1
+      }
+    },
+    "계통": {
+      "df": 4,
+      "postings": {
+        "sample-03": 2,
+        "sample-04": 2,
+        "sample-05": 4,
+        "sample-08": 3
+      }
+    },
+    "통의": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-05": 1
+      }
+    },
+    "폐열은": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "열은": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "통상": {
+      "df": 3,
+      "postings": {
+        "sample-03": 2,
+        "sample-05": 2,
+        "sample-08": 2
+      }
+    },
+    "고압": {
+      "df": 3,
+      "postings": {
+        "sample-03": 4,
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "생산에": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "생산": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "산에": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "활용된다": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "활용": {
+      "df": 3,
+      "postings": {
+        "sample-03": 1,
+        "sample-04": 2,
+        "sample-07": 1
+      }
+    },
+    "용된": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "된다": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "출구온도": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "출구": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "구온": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "cot": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "와": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "주기의": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "기의": {
+      "df": 3,
+      "postings": {
+        "sample-03": 1,
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "트레이드오프가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "트레": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "레이": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "이드": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "드오": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "오프": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "프가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "최신": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "재질": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "기준으로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "기준": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "준으": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "최적화되어": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "최적": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-08": 3
+      }
+    },
+    "적화": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-08": 1
+      }
+    },
+    "화되": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "계통에서": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "통에": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "회수되는": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "수되": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "되는": {
+      "df": 2,
+      "postings": {
+        "sample-03": 2,
+        "sample-08": 1
+      }
+    },
+    "등급": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "중압": {
+      "df": 2,
+      "postings": {
+        "sample-03": 2,
+        "sample-08": 2
+      }
+    },
+    "저압": {
+      "df": 3,
+      "postings": {
+        "sample-03": 2,
+        "sample-07": 4,
+        "sample-08": 2
+      }
+    },
+    "과": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "필요처가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "요처": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "처가": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "매칭되는지": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "매칭": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "칭되": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "cold": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "box": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "극저온": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "극저": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "저온": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "구간에서": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "구간": {
+      "df": 3,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 2,
+        "sample-08": 4
+      }
+    },
+    "간에": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "팽창밸브": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "팽창": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "창밸": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "밸브": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-08": 2
+      }
+    },
+    "대신": {
+      "df": 1,
+      "postings": {
+        "sample-03": 2
+      }
+    },
+    "터보익스팬더로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "터보": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "보익": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "익스": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "스팬": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "팬더": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "더로": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "동력을": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "동력": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "력을": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "회수할": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "수할": {
+      "df": 1,
+      "postings": {
+        "sample-03": 1
+      }
+    },
+    "여지가": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "여지": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "지가": {
+      "df": 2,
+      "postings": {
+        "sample-03": 1,
+        "sample-06": 1
+      }
+    },
+    "c4": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "유분에서": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "유분": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "분에": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "1": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "3": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "부타디엔을": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "부타": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "타디": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "디엔": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "엔을": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "분리하는": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "리하": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "대표적": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "대표": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "표적": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "방법은": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "방법": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "법은": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "극성": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "nmp": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "dmf": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "acn": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "를": {
+      "df": 2,
+      "postings": {
+        "sample-04": 1,
+        "sample-06": 1
+      }
+    },
+    "이용한": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "이용": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "추출증류다": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "류다": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "부타디엔과": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "엔과": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "나머지": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "나머": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "머지": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "성분": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "부탄": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "부텐류": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "부텐": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "텐류": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "어렵기": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "렵기": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "때문이다": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "때문": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "문이": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "재생탑의": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "hot": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "큰": {
+      "df": 2,
+      "postings": {
+        "sample-04": 1,
+        "sample-08": 1
+      }
+    },
+    "비중을": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "비중": {
+      "df": 2,
+      "postings": {
+        "sample-04": 1,
+        "sample-05": 1
+      }
+    },
+    "중을": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "차지한다": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "지한": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "원료비": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "료비": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "to": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "feed": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "ratio": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "가": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "이상으로": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "이상": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "상으": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "스트리핑": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "스트": {
+      "df": 1,
+      "postings": {
+        "sample-04": 3
+      }
+    },
+    "트리": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "리핑": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "하부": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "고온": {
+      "df": 2,
+      "postings": {
+        "sample-04": 2,
+        "sample-07": 2
+      }
+    },
+    "스트림의": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "트림": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "림의": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "열을": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "재사용하고": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "재사": {
+      "df": 2,
+      "postings": {
+        "sample-04": 1,
+        "sample-07": 1
+      }
+    },
+    "용하": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "하고": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "cracker": {
+      "df": 1,
+      "postings": {
+        "sample-04": 2
+      }
+    },
+    "유닛과의": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "닛과": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "과의": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "경계에서": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "경계": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "계에": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "스트림이": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "림이": {
+      "df": 1,
+      "postings": {
+        "sample-04": 1
+      }
+    },
+    "lldpe": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "hdpe": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "는": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "슬러리": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "슬러": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "러리": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "루프": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "loop": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "slurry": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "기상": {
+      "df": 2,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 2
+      }
+    },
+    "gas": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "phase": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "반응기에서": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "기에": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "중합되며": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "중합": {
+      "df": 3,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "합되": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "되며": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "반응열": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "응열": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "제거를": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "제거": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "거를": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "위한": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "냉각": {
+      "df": 3,
+      "postings": {
+        "sample-05": 6,
+        "sample-06": 2,
+        "sample-08": 3
+      }
+    },
+    "계통과": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "통과": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "미반응": {
+      "df": 3,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "미반": {
+      "df": 3,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "모노머": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "모노": {
+      "df": 3,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "노머": {
+      "df": 3,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "희석제": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "희석": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "석제": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "에너지": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "에너": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "너지": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "소비가": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "크다": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "압출": {
+      "df": 2,
+      "postings": {
+        "sample-05": 3,
+        "sample-06": 2
+      }
+    },
+    "펠레타이징": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "펠레": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "레타": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "타이": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "이징": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 1
+      }
+    },
+    "공정에서는": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "정에": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "구동모터와": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "구동": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "동모": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "모터": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 2
+      }
+    },
+    "터와": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "배럴": {
+      "df": 1,
+      "postings": {
+        "sample-05": 4
+      }
+    },
+    "다이": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "히터가": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "히터": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "터가": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "주요": {
+      "df": 2,
+      "postings": {
+        "sample-05": 2,
+        "sample-07": 2
+      }
+    },
+    "소비원이다": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "비원": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "원이": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "재킷": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "외부": {
+      "df": 2,
+      "postings": {
+        "sample-05": 2,
+        "sample-07": 1
+      }
+    },
+    "냉각기": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "각기": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "냉각수": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "각수": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "냉매": {
+      "df": 1,
+      "postings": {
+        "sample-05": 2
+      }
+    },
+    "과다하지": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "하지": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "재순환": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "압축기의": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "압축": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "축기": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-07": 1
+      }
+    },
+    "부분부하": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "분부": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "비중이": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "중이": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "높다면": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "높다": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "다면": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-06": 2
+      }
+    },
+    "vfd": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "전환": {
+      "df": 2,
+      "postings": {
+        "sample-05": 2,
+        "sample-08": 2
+      }
+    },
+    "검토": {
+      "df": 2,
+      "postings": {
+        "sample-05": 2,
+        "sample-06": 2
+      }
+    },
+    "압출기": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "출기": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "히터의": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "터의": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "존": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "zone": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "별": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "설정온도가": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "정온": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "도가": {
+      "df": 2,
+      "postings": {
+        "sample-05": 1,
+        "sample-08": 1
+      }
+    },
+    "열량보다": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "량보": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "보다": {
+      "df": 1,
+      "postings": {
+        "sample-05": 1
+      }
+    },
+    "pp": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "벌크": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "bulk": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "공정으로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "정으": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "파우더": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "파우": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "우더": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "상태의": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "상태": {
+      "df": 3,
+      "postings": {
+        "sample-06": 1,
+        "sample-07": 2,
+        "sample-08": 2
+      }
+    },
+    "태의": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "폴리머에서": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "폴리": {
+      "df": 2,
+      "postings": {
+        "sample-06": 1,
+        "sample-07": 3
+      }
+    },
+    "리머": {
+      "df": 2,
+      "postings": {
+        "sample-06": 1,
+        "sample-07": 1
+      }
+    },
+    "머에": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "모노머와": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "머와": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "voc": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "제거하는": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "거하": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "건조": {
+      "df": 1,
+      "postings": {
+        "sample-06": 3
+      }
+    },
+    "탈기": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "degassing": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "공정이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "정이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "별도로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "별도": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "도로": {
+      "df": 2,
+      "postings": {
+        "sample-06": 1,
+        "sample-08": 1
+      }
+    },
+    "가열용": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "가열": {
+      "df": 1,
+      "postings": {
+        "sample-06": 3
+      }
+    },
+    "열용": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "스팀과": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "팀과": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "퍼지용": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "퍼지": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "지용": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "질소가": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "질소": {
+      "df": 2,
+      "postings": {
+        "sample-06": 3,
+        "sample-08": 2
+      }
+    },
+    "소가": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "상당량": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "당량": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "소비된다": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "비된": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "건조탑의": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "조탑": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "구간이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "간이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "분리되어": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "리되": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "있다면": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "있다": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "통합형": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "통합": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "합형": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "구조로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "조로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "개조": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "시": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "절감": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "정제된": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "정제": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "제된": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "배기가스로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "배기": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "기가": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "가스": {
+      "df": 2,
+      "postings": {
+        "sample-06": 1,
+        "sample-08": 3
+      }
+    },
+    "스로": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "부분이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "분이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "라인의": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "인의": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "부하율이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "하율": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "율이": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "낮은": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "시간대가": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "간대": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "대가": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "인버터": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "인버": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "버터": {
+      "df": 1,
+      "postings": {
+        "sample-06": 1
+      }
+    },
+    "제어": {
+      "df": 2,
+      "postings": {
+        "sample-06": 2,
+        "sample-08": 4
+      }
+    },
+    "적용": {
+      "df": 1,
+      "postings": {
+        "sample-06": 2
+      }
+    },
+    "용액중합": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "용액": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "액중": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "solution": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "process": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "기반": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "메탈로센": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "메탈": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "탈로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "로센": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "폴리에틸렌": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "리에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "폴리올레핀": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "리올": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "올레": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "레핀": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "플라스토머": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "플라": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "라스": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "스토": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "토머": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "고압에서": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "압에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "주로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "탄화수소": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "탄화": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "화수": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "수소": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "폴리머를": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "머를": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "녹인": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "상태로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "태로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "반응시킨": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "응시": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "시킨": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "후단에서": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "단에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "모노머를": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "회수한다": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "수한": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "회수탑의": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "수탑": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "열원과": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "열원": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "원과": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "과정에서": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "과정": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "발생하는": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "발생": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "생하": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "스팀의": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "팀의": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "재활용": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "재활": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "여부가": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "여부": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "부가": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "효율을": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "효율": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "좌우하는": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "좌우": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "우하": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "변수다": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "변수": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "수다": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "회수탑에서": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "탑에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "스팀이": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "팀이": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "외부로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "부로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "방출되지": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "방출": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "출되": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "되지": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "않고": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "플랜트": {
+      "df": 2,
+      "postings": {
+        "sample-07": 1,
+        "sample-08": 1
+      }
+    },
+    "플랜": {
+      "df": 2,
+      "postings": {
+        "sample-07": 1,
+        "sample-08": 3
+      }
+    },
+    "랜트": {
+      "df": 2,
+      "postings": {
+        "sample-07": 1,
+        "sample-08": 2
+      }
+    },
+    "등에": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "재사용되고": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "용되": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "탈휘발": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "탈휘": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "휘발": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "사이": {
+      "df": 1,
+      "postings": {
+        "sample-07": 2
+      }
+    },
+    "추가로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "추가": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "가로": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "운전점이": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "전점": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "설계점": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "계점": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "과부하": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "과부": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "저부하": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "저부": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "상태는": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "태는": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "아닌지": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "아닌": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "닌지": {
+      "df": 1,
+      "postings": {
+        "sample-07": 1
+      }
+    },
+    "계통은": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "통은": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "각": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "플랜트에": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "트에": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "계장공기": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "계장": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "장공": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "공기": {
+      "df": 1,
+      "postings": {
+        "sample-08": 3
+      }
+    },
+    "등을": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "공급하는": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "공급": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "급하": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "공통": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "인프라다": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "인프": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "라다": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "개별": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "최적화만큼이나": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "화만": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "만큼": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "큼이": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "이나": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "자체의": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "자체": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "체의": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "배관": {
+      "df": 1,
+      "postings": {
+        "sample-08": 4
+      }
+    },
+    "보온": {
+      "df": 1,
+      "postings": {
+        "sample-08": 4
+      }
+    },
+    "냉각탑": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "각탑": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "팬": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "보일러": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "연소공기": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "연소": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "소공": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "제어가": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "어가": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "원가에": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "원가": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "가에": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "영향을": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "영향": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "향을": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "준다": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "플랜지의": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "랜지": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "지의": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "누락": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "열화상": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "열화": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "화상": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "점검으로": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "검으": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "저": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "capex": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "개선과제": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "개선": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "선과": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "과제": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "발굴": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "팬이": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "고정속도로": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "고정": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "정속": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "속도": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "중이라면": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "이라": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "라면": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "연동": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "제어로": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "어로": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "가능한지": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "한지": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "배가스": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "배가": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "o2": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "농도가": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "농도": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "과잉공기": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "잉공": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "약": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "15": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "을": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "벗어나": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "벗어": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "어나": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "플레어링되는": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "플레": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "레어": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "어링": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "링되": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "유량": {
+      "df": 1,
+      "postings": {
+        "sample-08": 3
+      }
+    },
+    "설비": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "투자를": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "투자": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "자를": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "정당화할": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "정당": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "당화": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "화할": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    },
+    "만한": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "상시": {
+      "df": 1,
+      "postings": {
+        "sample-08": 2
+      }
+    },
+    "유량이": {
+      "df": 1,
+      "postings": {
+        "sample-08": 1
+      }
+    }
+  }
+}

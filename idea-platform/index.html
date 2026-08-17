@@ -9,7 +9,7 @@
 <body>
   <header class="app-header">
     <h1>공정 최적화 아이디어 벤치마킹 엔진</h1>
-    <p class="subtitle">공장/설비를 선택하면 공개 문헌·특허의 utility 절감·반제품 고부가화 사례를 매칭해줍니다. (외부 LLM 호출 없이 태그 매칭으로 동작 — 폐쇄망 반입 대상)</p>
+    <p class="subtitle">공장/설비를 선택하면 공개 문헌·특허의 utility 절감·반제품 고부가화 사례와 사내 지식 자료를 함께 찾아줍니다. (외부 LLM·서버 호출 없이 전부 클라이언트에서 동작 — 폐쇄망 반입 대상)</p>
   </header>
 
   <main class="layout">
@@ -18,22 +18,55 @@
         <h2>공장 선택</h2>
         <div id="plant-filters"></div>
       </div>
-      <div class="filter-block">
-        <h2>카테고리</h2>
+      <div class="filter-block" id="category-block">
+        <h2>카테고리 (벤치마킹 사례 전용)</h2>
         <div id="category-filters"></div>
-      </div>
-      <div class="filter-block">
-        <input id="search-box" type="search" placeholder="키워드 검색 (예: 열교환, 압축기, pygas)" />
       </div>
       <button id="reset-btn" type="button">필터 초기화</button>
     </aside>
 
     <section class="results">
-      <div id="result-count" class="result-count"></div>
-      <div id="case-list" class="case-list"></div>
+      <div class="tab-row" role="tablist">
+        <button class="tab-btn active" data-tab="cases" type="button">벤치마킹 사례</button>
+        <button class="tab-btn" data-tab="knowledge" type="button">사내 지식 검색</button>
+      </div>
+
+      <div id="tab-cases" class="tab-panel active">
+        <div class="filter-block">
+          <input id="search-box" type="search" placeholder="키워드 검색 (예: 열교환, 압축기, pygas)" />
+        </div>
+        <div id="result-count" class="result-count"></div>
+        <div id="case-list" class="case-list"></div>
+      </div>
+
+      <div id="tab-knowledge" class="tab-panel">
+        <div class="sample-banner">
+          ⚠ 아래는 데모용 <strong>샘플</strong> 문서입니다. VDI 반입 후 <code>knowledge/docs/</code>를
+          실제 공정 매뉴얼·Knowledge book 발췌로 교체하고 <code>build_index.py</code>를 다시 실행하세요.
+        </div>
+        <div class="filter-block">
+          <input id="knowledge-search-box" type="search" placeholder="사내 자료 검색 (예: 용제 재생탑, 디코킹)" />
+        </div>
+        <div id="knowledge-result-count" class="result-count"></div>
+        <div id="knowledge-list" class="case-list"></div>
+      </div>
     </section>
   </main>
 
   <script src="app.js"></script>
+  <script src="knowledge.js"></script>
+  <script>
+    document.querySelectorAll(".tab-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+        document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(`tab-${btn.dataset.tab}`).classList.add("active");
+        document.getElementById("category-block").style.display =
+          btn.dataset.tab === "cases" ? "" : "none";
+      });
+    });
+    initKnowledge();
+  </script>
 </body>
 </html>
