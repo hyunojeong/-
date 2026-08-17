@@ -1,0 +1,236 @@
+[
+  {
+    "id": "case-01",
+    "title": "원유 증류공정 Pinch Analysis 열통합 (Kaduna 정유·석유화학, 나이지리아)",
+    "summary": "상압증류(CDU)와 유동접촉분해(FCC) 유닛에 Pinch Analysis를 적용해 열교환망을 재설계한 사례. Hot utility 31%(6,570kW), Cold utility 26%(10,011kW) 절감을 달성.",
+    "quantifiedBenefit": "Hot utility -31% (6,570kW), Cold utility -26% (10,011kW), 연 약 $9.58M 절감",
+    "plants": ["btx", "px"],
+    "categories": ["heat_integration"],
+    "source": {
+      "title": "Energy Integration Of Crude Distillation Plant Using Pinch Analysis (Kaduna Refinery and Petrochemical Company, Nigeria)",
+      "url": "https://www.academia.edu/83893140/Energy_Integration_Of_Crude_Distillation_Plant_Using_Pinch_Analysis_A_Case_Study_Of_Kaduna_Refinery_And_Petrochemical_Company_Nigeria_"
+    },
+    "ideaPrompt": "PX/BTX 증류탑군의 열교환망(HEN)을 Pinch Analysis 관점에서 재검토하면 스팀/냉각수 절감 여지가 남아있는지 진단해볼 가치가 있음."
+  },
+  {
+    "id": "case-02",
+    "title": "상압증류 유닛 열교환망(HEN) 레트로핏",
+    "summary": "Pinch Analysis 기반 HEN 레트로핏 설계로 상압증류 유닛의 냉난방 utility를 동시에 절감하고 CO2 배출도 줄인 사례.",
+    "quantifiedBenefit": "냉난방 utility 합산 9.3MW 절감, 3년 회수기간, CO2 1,079.6kg/h 저감",
+    "plants": ["btx", "px"],
+    "categories": ["heat_integration"],
+    "source": {
+      "title": "Application of pinch analysis to improve the heat integration efficiency in a crude distillation unit",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666790821001282"
+    },
+    "ideaPrompt": "증류탑 리보일러/컨덴서 열부하를 스트림별로 재매핑해 저비용 레트로핏(배관 재라우팅 수준)으로 회수 가능한 열이 있는지 확인."
+  },
+  {
+    "id": "case-03",
+    "title": "폴리에틸렌 플랜트 열교환망 레트로핏 (Pinch Analysis)",
+    "summary": "폴리에틸렌 생산 플랜트에서 기존 열교환망을 수정하고 flue gas로 스팀을, 공정 스트림으로 chilled water를 생산하도록 개선한 사례.",
+    "quantifiedBenefit": "Hot utility -9%, Cold utility -24%, 회수기간 2.3년",
+    "plants": ["lldpe", "hdpe"],
+    "categories": ["heat_integration", "waste_heat"],
+    "source": {
+      "title": "Energy Optimization with Pinch Analysis (McMullan) — Polyethylene plant case",
+      "url": "https://www.slideshare.net/slideshow/energy-optimization-with-pinch-analysis-mcmullan/227266204"
+    },
+    "ideaPrompt": "LLDPE/HDPE 공정의 폐가스(flue gas) 열을 스팀 생산에, 공정 냉각 스트림을 냉수 생산에 재활용할 수 있는 배관/열교환기 구성이 가능한지 검토."
+  },
+  {
+    "id": "case-04",
+    "title": "메탄올 합성 플랜트 Pinch + Exergy 분석",
+    "summary": "Pinch 온도차와 열교환망 구조를 최적화하고, Exergy 분석으로 blowdown tower의 중압 스팀 생산 잠재력까지 추가 발굴한 사례.",
+    "quantifiedBenefit": "총 연간비용 -27% (연 약 $1.9M), blowdown tower MP스팀 생산으로 추가 연 $0.75M",
+    "plants": ["utility"],
+    "categories": ["heat_integration", "waste_heat"],
+    "source": {
+      "title": "Energy and economy savings in the process of methanol synthesis using Pinch technology",
+      "url": "https://www.academia.edu/33301845/Energy_and_economy_savings_in_the_process_of_methanol_synthesis_unsig_Pinch_technology"
+    },
+    "ideaPrompt": "각 플랜트 blowdown/flash drum류에서 그냥 버려지는 저압 스팀·응축수를 MP/LP 스팀으로 재승압 회수하는 아이디어를 전 공장 공통으로 점검."
+  },
+  {
+    "id": "case-05",
+    "title": "나프타 분해로(Cracker Furnace) 코일·재질 고도화",
+    "summary": "스팀크래커의 열분해(pyrolysis) 구간이 전체 공정 에너지의 약 65%, exergy 손실의 약 75%를 차지한다는 분석과 함께, 첨단 코일·노(furnace) 재질 적용 시 약 20%, 압축·분리 구간 개선까지 더하면 최대 약 15%p 추가 절감 가능성을 제시.",
+    "quantifiedBenefit": "Pyrolysis 구간 개선으로 최대 ~20% 공정에너지 절감, 압축/분리 구간 추가 개선 시 최대 ~15%p 추가",
+    "plants": ["cracker"],
+    "categories": ["process_tech", "rotating_equipment"],
+    "source": {
+      "title": "A Study of Energy Intensity and Carbon Intensity from Olefin Plants (MATEC Conferences)",
+      "url": "https://www.matec-conferences.org/articles/matecconf/pdf/2016/31/matecconf_iciea2016_14002.pdf"
+    },
+    "ideaPrompt": "Cracker 분해로의 코일/튜브 교체 주기와 재질 스펙을 최신 고내열 합금 기준과 비교해, 디코킹 주기 연장 및 열효율 개선 여지를 검토."
+  },
+  {
+    "id": "case-06",
+    "title": "제올라이트 촉매 기반 저온 접촉분해 (naphtha catalytic cracking)",
+    "summary": "650℃ 반응온도의 제올라이트 촉매 공정이 기존 820℃ 열분해 대비 에틸렌+프로필렌 수율을 약 10%p 높이고, 3,000톤-나프타/일 규모 타당성 검토에서 약 20% 에너지 절감 가능성을 제시.",
+    "quantifiedBenefit": "에틸렌+프로필렌 수율 +10%p, 공정에너지 -20% (타당성 검토 기준)",
+    "plants": ["cracker"],
+    "categories": ["process_tech"],
+    "source": {
+      "title": "Catalytic Cracking of Naphtha into Light Olefins",
+      "url": "https://www.researchgate.net/publication/264068380_Catalytic_Cracking_of_Naphtha_into_Light_Olefins"
+    },
+    "ideaPrompt": "중장기 R&D 관점에서 촉매 분해 기술 도입 시 수율/에너지 개선폭을 우리 Cracker 피드 구성 기준으로 재계산해보는 스터디 아이디어."
+  },
+  {
+    "id": "case-07",
+    "title": "Aromatics Complex 저온폐열 ORC 회수 시스템",
+    "summary": "Organic Rankine Cycle(ORC)을 열교환망(HEN)과 통합해 아로마틱 콤플렉스의 저등급 폐열을 회수하는 시스템 설계·최적화 사례.",
+    "quantifiedBenefit": "공정 스트림에서 380.95MW 열회수, ORC 효율 9.05%, 종합 exergy 효율 82.13%",
+    "plants": ["btx", "px"],
+    "categories": ["waste_heat"],
+    "source": {
+      "title": "Process Design and Analysis of a Novel Heat Recovery Energy System for an Aromatics Complex",
+      "url": "https://www.researchgate.net/publication/367772935_Process_Design_and_Analysis_of_a_Novel_Heat_Recovery_Energy_System_for_an_Aromatics_Complex"
+    },
+    "ideaPrompt": "PX/BTX 콤플렉스에서 현재 냉각탑으로 버려지는 저온(80~150℃급) 폐열 스트림을 ORC 발전에 활용할 규모가 되는지 1차 스크리닝."
+  },
+  {
+    "id": "case-08",
+    "title": "Aromatics Complex 공정+열교환망 동시 최적화 (AI 서로게이트 모델)",
+    "summary": "인공신경망(ANN) 서로게이트 모델로 공정 모델을 근사하고, 상변화가 있는 스트림까지 포함한 열교환망 모델과 동시 최적화한 프레임워크. PX 생산 공정처럼 에너지 집약적 아로마틱 콤플렉스에 적용.",
+    "quantifiedBenefit": "공정 최적화와 HEN 최적화를 동시 수행하는 프레임워크 (수치는 사례별 상이, 원문 참조)",
+    "plants": ["px"],
+    "categories": ["heat_integration", "process_tech"],
+    "source": {
+      "title": "Simultaneous Optimization and Heat Integration of an Aromatics Complex with a Surrogate Model (I&EC Research, ACS)",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.iecr.0c05507"
+    },
+    "ideaPrompt": "PX 공정 시뮬레이션 모델이 이미 있다면, 이를 서로게이트화해 열교환망과 함께 동시 최적화하는 스터디를 외부 기관과 공동 추진해볼 수 있음."
+  },
+  {
+    "id": "case-09",
+    "title": "Borealis Porvoo 페놀·아로마틱 플랜트 Plant-wide 온라인 최적화(APC)",
+    "summary": "Borealis Polymers가 Porvoo의 페놀·아로마틱 플랜트에 plant-wide 온라인 최적화(APC)를 적용해 설비 투자 없이 생산성과 운전 안정성을 동시에 개선한 사례.",
+    "quantifiedBenefit": "생산량 +9%, 운전 안정성 대폭 개선 (저capex, 소프트웨어/제어 중심)",
+    "plants": ["btx", "px"],
+    "categories": ["apc_optimization"],
+    "source": {
+      "title": "Case history: Optimization of aromatics complex (Hydrocarbon Processing)",
+      "url": "https://www.hydrocarbonprocessing.com/magazine/2014/april-2014/special-report-petrochemical-developments/case-history-optimization-of-aromatics-complex"
+    },
+    "ideaPrompt": "설비투자 없이도 APC(Advanced Process Control) 튜닝만으로 처리량/수율을 끌어올린 이 사례처럼, 우리 Aromatic 콤플렉스의 APC 모델을 재점검·재튜닝하는 저capex 과제 우선 검토."
+  },
+  {
+    "id": "case-10",
+    "title": "열분해유(Pyrolysis Gasoline) → BTX 고부가화",
+    "summary": "스팀크래커에서 나오는 중질 부산물인 열분해유(pygas)는 방향족 함량이 높지만 통상 연료유로 소각되는데, 수첨처리(hydrotreatment) 후 방향족 추출을 거치면 벤젠·톨루엔·자일렌(BTX)의 고순도 원료로 전환 가능.",
+    "quantifiedBenefit": "저가 연료유 용도 → 고부가 BTX 원료 전환 (전환폭은 pygas 조성/설비 여유에 따라 상이)",
+    "plants": ["cracker", "btx"],
+    "categories": ["byproduct_upgrade"],
+    "source": {
+      "title": "Integration process for pyrolysis oil upgrading with maximized BTX yield (US Patent 11,732,202)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11732202"
+    },
+    "ideaPrompt": "Cracker에서 나오는 Pygas 중 현재 연료유·저부가 용도로 처리되는 물량을 BTX 공장 수첨/추출 설비로 우회 공급할 여력이 있는지 balance 재검토 — SK에너지向 반제품 배합과 유사한 Olefin↔Aromatic 내부 시너지 사례."
+  },
+  {
+    "id": "case-11",
+    "title": "FCC C4/C5 + Raffinate 재구성 → 프로필렌·벤젠·PX 극대화 (Rafinerie Onesti)",
+    "summary": "동유럽 정유사가 FCC의 C4/C5 유분과 C6-C8 raffinate를 가솔린 블렌딩 대신 프로필렌·벤젠·파라자일렌 생산 원료로 재구성한 사례. 가솔린 풀에서 올레핀을 제거하는 동시에 석유화학 방향족 생산을 늘리는 시너지 효과.",
+    "quantifiedBenefit": "가솔린 블렌딩용 저부가 유분을 프로필렌/벤젠/PX 고부가 제품으로 재배분",
+    "plants": ["btx", "px", "cracker"],
+    "categories": ["byproduct_upgrade"],
+    "source": {
+      "title": "Engineered to Innovate: Refining/Petrochemical Integration - A New Paradigm (GTC / World Oil)",
+      "url": "https://www.worldoil.com/uploadedfiles/configurations/gtc_white_paper_for_hydrocarbon_processing.pdf"
+    },
+    "ideaPrompt": "SK에너지로 보내는 반제품 중 C4/C5/방향족 유분 일부를 가솔린 블렌딩보다 PX/벤젠 원료로 재배분했을 때 마진이 더 나은 유분이 있는지 정기적으로 유가·제품가 스프레드 기준 재평가."
+  },
+  {
+    "id": "case-12",
+    "title": "1,3-부타디엔 추출 공정 히트펌프 결합 Dividing Wall Column",
+    "summary": "기존 BASF 열결합 추출증류(ED) 공정 대비, 중간가열을 도입하고 클래식 컬럼을 히트펌프 결합 Dividing Wall Column(DWC)으로 대체한 개선 공정. 고온 hot utility 의존도를 낮춰 열통합 여지를 확대.",
+    "quantifiedBenefit": "공정 에너지 요구량 최대 -21%",
+    "plants": ["butadiene"],
+    "categories": ["heat_integration", "process_tech"],
+    "source": {
+      "title": "Enhanced process for energy efficient extraction of 1,3-butadiene from a crude C4 cut (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1383586621003683"
+    },
+    "ideaPrompt": "부타디엔 추출증류 컬럼군에 DWC/히트펌프 개조가 가능한지, 현재 컬럼 배치와 스팀 소비 패턴 기준으로 1차 스크리닝."
+  },
+  {
+    "id": "case-13",
+    "title": "부타디엔 추출 유닛 - Cracker 폐열 활용 Feed 예열",
+    "summary": "스트리핑 컬럼 하부의 고온 용제 스트림을 열회수 순환계로 돌려 후속 증류 스트림을 예열하고, 나프타 분해 유닛의 폐열로 부타디엔 추출 유닛 feed를 예열해 외부 에너지 투입을 줄이는 방식.",
+    "quantifiedBenefit": "외부 hot utility 투입 감소 (정량치는 설비 구성별 상이)",
+    "plants": ["butadiene", "cracker"],
+    "categories": ["heat_integration", "waste_heat"],
+    "source": {
+      "title": "Enhanced process for energy efficient extraction of 1,3-butadiene from a crude C4 cut (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1383586621003683"
+    },
+    "ideaPrompt": "Cracker와 Butadiene 유닛 사이에 이미 존재하는 폐열 스트림 중 BD 유닛 feed 예열에 활용 가능한 온도대의 스트림이 있는지 Cracker-BD 경계 열지도(heat map)로 확인."
+  },
+  {
+    "id": "case-14",
+    "title": "LDPE 압축기·스팀트랩 최적화",
+    "summary": "튜블러 반응기형 LDPE 플랜트에서 배출 스팀을 LiBr 흡수식 설비로 재활용, 스팀트랩 매칭 교체, 압축기·반응기 운전 조정, 최적 압축비 선정, 열교환 효율 개선을 통해 에너지 소비를 크게 낮춘 사례.",
+    "quantifiedBenefit": "종합 에너지 소비 상당폭 절감 (전기/스팀/냉각수 3대 요소 개선)",
+    "plants": ["lldpe", "hdpe", "pp"],
+    "categories": ["rotating_equipment", "waste_heat"],
+    "source": {
+      "title": "Energy consumption analysis and energy saving measures for LDPE plant with tubular reactor",
+      "url": "https://www.researchgate.net/publication/291615554_Energy_consumption_analysis_and_energy_saving_measures_for_LDPE_plant_with_tubular_reactor"
+    },
+    "ideaPrompt": "고압/다단 압축기를 쓰는 LLDPE·HDPE·PP 공정에서 스팀트랩 전수 점검, 압축비 재설정, 배출 스팀 재활용 여지를 저capex 과제로 우선 점검."
+  },
+  {
+    "id": "case-15",
+    "title": "Flare Gas 회수 시스템(FGRS)",
+    "summary": "압축·저장 후 재사용하는 Flare Gas 회수 시스템은 플레어로 소각되는 가스의 최대 약 90%까지 회수 가능하며, 연료가스·스팀 소비를 줄이고 소음·복사열·대기오염도 함께 저감.",
+    "quantifiedBenefit": "Flare gas 최대 ~90% 회수, 한 사례에서 연료소비 -33%, 회수기간 약 2년",
+    "plants": ["utility", "cracker"],
+    "categories": ["flare_loss", "waste_heat"],
+    "source": {
+      "title": "Technical, economic, and environmental assessment of flare gas recovery system: a case study",
+      "url": "https://www.researchgate.net/publication/339919500_Technical_economic_and_environmental_assessment_of_flare_gas_recovery_system_a_case_study"
+    },
+    "ideaPrompt": "정상운전 중 상시 flaring되는 유량(BD/Off-gas 등)이 회수 설비 투자 회수기간을 정당화할 규모인지 최근 1년 flare 유량 데이터로 스크리닝."
+  },
+  {
+    "id": "case-16",
+    "title": "올레핀 플랜트 기동(Start-up) 절차 개선을 통한 Flare 저감",
+    "summary": "설비 투자 없이 올레핀 플랜트의 기동 절차 자체를 재설계해 기동 시 발생하는 flare gas 발생량을 줄인 운전 최적화 사례.",
+    "quantifiedBenefit": "설비투자 無, 절차 개선만으로 기동 시 flare 발생량 저감",
+    "plants": ["cracker"],
+    "categories": ["flare_loss", "apc_optimization"],
+    "source": {
+      "title": "Flare gas reduction in an olefin plant under different start-up procedures (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S036054422032034X"
+    },
+    "ideaPrompt": "Cracker 정기보수 후 기동(start-up) 표준 절차를 이 사례처럼 순서/램프업 속도 관점에서 재검토하면 설비투자 없이 flare loss를 줄일 수 있는지 확인 — 가장 빠르게 시도해볼 수 있는 아이디어."
+  },
+  {
+    "id": "case-17",
+    "title": "정유공정 저등급 폐열 ORC 발전 (HDS/FCC 유닛)",
+    "summary": "디젤 수첨탈황(HDS)과 접촉분해(FCC) 유닛의 저등급 폐열을 ORC + 리큐퍼레이터로 회수해 발전에 활용한 사례. 열효율을 높이는 동시에 냉각 utility 부담을 낮춤.",
+    "quantifiedBenefit": "열효율 7.20%→8.74%, 냉각 utility -4.94MW, 터빈 출력 +1.83MW",
+    "plants": ["utility"],
+    "categories": ["waste_heat"],
+    "source": {
+      "title": "Utilization of low-grade waste heat for power generation in refineries: case studies on diesel hydrodesulfurization and catalytic cracking units",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2451904925006705"
+    },
+    "ideaPrompt": "저온 폐열이 몰리는 냉각탑 계통을 대상으로 ORC 발전 적용 시 냉각수 부하 저감 + 자가발전이라는 두 가지 효과를 동시에 노릴 수 있는지 스크리닝."
+  },
+  {
+    "id": "case-18",
+    "title": "메탄올 플랜트 폐열 발전 (LURGI 공정)",
+    "summary": "공정 스트림에서 버려지는 폐열을 활용해 전력을 생산하도록 재설계한 LURGI 메탄올 플랜트 사례. 탄소배출 저감 효과도 함께 확인.",
+    "quantifiedBenefit": "순발전량 약 7.5MW, CO2 배출 최대 연 40,000톤 저감",
+    "plants": ["utility"],
+    "categories": ["waste_heat"],
+    "source": {
+      "title": "Optimizing electricity generation through the utilization of wasted heat from process streams in a LURGI methanol plant",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11103522/"
+    },
+    "ideaPrompt": "전 공장 utility 계통에서 현재 활용되지 않는 폐열 스트림 목록을 만들어, 발전 잠재량이 가장 큰 지점부터 ORC/폐열보일러 적용 우선순위를 매겨보는 스터디."
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "businessUnits": [
+    { "id": "aromatic", "name": "Aromatic", "plants": ["btx", "px"] },
+    { "id": "olefin", "name": "Olefin", "plants": ["cracker", "butadiene"] },
+    { "id": "polymer", "name": "Polymer", "plants": ["lldpe", "hdpe", "pp", "nexlene"] },
+    { "id": "cross", "name": "Cross-Plant / Utility", "plants": ["utility"] }
+  ],
+  "plants": [
+    { "id": "btx", "name": "BTX", "unit": "aromatic" },
+    { "id": "px", "name": "PX", "unit": "aromatic" },
+    { "id": "cracker", "name": "Cracker (NCC)", "unit": "olefin" },
+    { "id": "butadiene", "name": "Butadiene", "unit": "olefin" },
+    { "id": "lldpe", "name": "LLDPE", "unit": "polymer" },
+    { "id": "hdpe", "name": "HDPE", "unit": "polymer" },
+    { "id": "pp", "name": "PP", "unit": "polymer" },
+    { "id": "nexlene", "name": "Nexlene", "unit": "polymer" },
+    { "id": "utility", "name": "Utility / 전 공장 공통", "unit": "cross" }
+  ],
+  "categories": [
+    { "id": "heat_integration", "name": "열통합 / Pinch Analysis" },
+    { "id": "rotating_equipment", "name": "압축기·회전기계 효율" },
+    { "id": "waste_heat", "name": "폐열회수 / 발전" },
+    { "id": "flare_loss", "name": "Flare / 손실 저감" },
+    { "id": "byproduct_upgrade", "name": "반제품·부산물 고부가화" },
+    { "id": "process_tech", "name": "공정·촉매 기술" },
+    { "id": "apc_optimization", "name": "APC / 운전 최적화" }
+  ]
+}

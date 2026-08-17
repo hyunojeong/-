@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공정 최적화 아이디어 벤치마킹 엔진</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>공정 최적화 아이디어 벤치마킹 엔진</h1>
+    <p class="subtitle">공장/설비를 선택하면 공개 문헌·특허의 utility 절감·반제품 고부가화 사례를 매칭해줍니다. (외부 LLM 호출 없이 태그 매칭으로 동작 — 폐쇄망 반입 대상)</p>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="filter-block">
+        <h2>공장 선택</h2>
+        <div id="plant-filters"></div>
+      </div>
+      <div class="filter-block">
+        <h2>카테고리</h2>
+        <div id="category-filters"></div>
+      </div>
+      <div class="filter-block">
+        <input id="search-box" type="search" placeholder="키워드 검색 (예: 열교환, 압축기, pygas)" />
+      </div>
+      <button id="reset-btn" type="button">필터 초기화</button>
+    </aside>
+
+    <section class="results">
+      <div id="result-count" class="result-count"></div>
+      <div id="case-list" class="case-list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
