@@ -232,5 +232,265 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11103522/"
     },
     "ideaPrompt": "전 공장 utility 계통에서 현재 활용되지 않는 폐열 스트림 목록을 만들어, 발전 잠재량이 가장 큰 지점부터 ORC/폐열보일러 적용 우선순위를 매겨보는 스터디."
+  },
+  {
+    "id": "case-19",
+    "title": "C3 Splitter(프로필렌-프로판 분리탑) 히트펌프 결합",
+    "summary": "오버헤드 증기를 압축해 리보일러 열원으로 재사용하는 히트펌프 결합 방식을 적용한 프로필렌-프로판 분리 공정 파라메트릭 스터디. 스팀 대신 압축전력을 쓰는 구조로 전환.",
+    "quantifiedBenefit": "스탠드얼론 컬럼 대비 총 연간비용 약 -37%, 추가 압축동력은 리보일러 열부하의 약 11~12% 수준",
+    "plants": ["cracker", "pp"],
+    "categories": ["heat_integration", "rotating_equipment"],
+    "source": {
+      "title": "Novel heat pump assisted distillation configurations for energy and economic savings and their application on propylene/propane and I-butane/N-butane separation systems",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0009250924004391"
+    },
+    "ideaPrompt": "Cracker/PP 공정의 C3 Splitter(프로필렌-프로판 분리탑)에 히트펌프를 결합해 리보일러 스팀 수요를 압축전력으로 대체할 수 있는지 컬럼 사양 기준 스크리닝."
+  },
+  {
+    "id": "case-20",
+    "title": "내부 열통합 증류탑 (HIDiC)",
+    "summary": "정류부를 회수부보다 고압·고온으로 운전해 컬럼 내부에서 열을 자체 통합하는 HIDiC(Heat-Integrated Distillation Column) 설계. 전통적 컬럼·히트펌프 결합 컬럼 대비 추가 절감 여지를 제시.",
+    "quantifiedBenefit": "열역학적 효율 +2.2%p, 컬럼 내 손실일(lost work) 21.7kW/h 감소",
+    "plants": ["px", "btx"],
+    "categories": ["heat_integration"],
+    "source": {
+      "title": "Energy efficient distillation by optimal distribution of heating and cooling requirements",
+      "url": "https://www.academia.edu/51271024/Energy_efficient_distillation_by_optimal_distribution_of_heating_and_cooling_requirements"
+    },
+    "ideaPrompt": "PX/BTX 주요 증류탑 중 정류부-회수부 온도차가 큰 컬럼을 HIDiC(내부 열통합) 개조 후보로 선별."
+  },
+  {
+    "id": "case-21",
+    "title": "냉동 압축기 VFD(가변속 구동) 전환",
+    "summary": "정속 운전 중인 냉동 압축기를 VFD로 전환해 부분부하 구간에서 불필요하게 소모되던 동력을 줄인 사례.",
+    "quantifiedBenefit": "VFD 적용으로 냉동시스템 에너지비용 약 -35%",
+    "plants": ["cracker", "lldpe", "hdpe"],
+    "categories": ["rotating_equipment"],
+    "source": {
+      "title": "Optidrive VFD controlled refrigeration system saves 35% in energy costs (Sumitomo Drive)",
+      "url": "https://us.sumitomodrive.com/en-us/case-study/optidrive-vfd-controlled-refrigeration-system-saves-35-energy-costs"
+    },
+    "ideaPrompt": "Cracker 냉동/압축 계통 중 정속 운전 중인 압축기를 VFD로 개조했을 때, 부분부하 구간이 많은 설비부터 우선순위를 매겨볼 것."
+  },
+  {
+    "id": "case-22",
+    "title": "냉각탑 팬 속도 최적화 (VFD)",
+    "summary": "냉각탑 유인통풍 팬을 공정부하에 연동한 가변속 제어로 전환해 불필요한 고속 운전 구간을 줄인 사례. 팬 동력은 회전속도의 세제곱에 비례해 소폭의 속도 저감도 큰 절감으로 이어짐.",
+    "quantifiedBenefit": "펌프·팬 속도 최적화로 시스템 전체 에너지 -12~13%, 팬 단독 기준 최대 -50%",
+    "plants": ["utility"],
+    "categories": ["rotating_equipment", "waste_heat"],
+    "source": {
+      "title": "Maximizing the energy efficiency of induced draft and hybrid draft cooling towers",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214157X25004435"
+    },
+    "ideaPrompt": "전 공장 냉각탑 팬을 고정속도로 운전 중이라면, 공정부하 연동 VFD 제어로 전환 시 절감 효과가 있는지 냉각수 순환량 데이터 기준으로 시뮬레이션."
+  },
+  {
+    "id": "case-23",
+    "title": "모터-펌프 시스템 VSD 최적화",
+    "summary": "유휴운전 방지, 유량 매칭형 가변속 구동(VSD) 적용, 과열 방지 등 3가지 조치를 조합해 모터 구동 펌프 시스템의 에너지 사용을 최적화한 사례.",
+    "quantifiedBenefit": "유휴운전 차단 + VSD 유량매칭 + 온도제어 최적화로 펌프 시스템 에너지 절감 (설비별 상이)",
+    "plants": ["utility"],
+    "categories": ["rotating_equipment"],
+    "source": {
+      "title": "Energy Efficiency Optimization of Motor-Driven Pump Systems: A Case Study",
+      "url": "https://www.scientific.net/JERA.75.117"
+    },
+    "ideaPrompt": "정유량으로 상시 운전 중인 유틸리티 펌프(냉각수·보일러 급수 등) 목록을 뽑아 VSD 전환 우선순위 리스트를 만들어볼 것."
+  },
+  {
+    "id": "case-24",
+    "title": "저capex 부착형 장치를 통한 순환수 펌프 절전 실증 (중국 석유화학)",
+    "summary": "폐순환 냉각수 시스템의 개별 모터 제어반에 Balanced Wave Technology(BWT) 장치를 부착하는 것만으로 별도 대개조 없이 절전 효과를 계측·검증한 사례.",
+    "quantifiedBenefit": "5주간 평균 전력 -10.46%, 연간 약 66,447kWh 절감 (CO2e 약 68.94톤 상당)",
+    "plants": ["utility"],
+    "categories": ["rotating_equipment"],
+    "source": {
+      "title": "Improving the Energy Efficiency of Petrochemical Plant Operations: A Measurement and Verification Case Study Using a Balanced Wave Optimizer",
+      "url": "https://www.mdpi.com/1996-1073/12/21/4136"
+    },
+    "ideaPrompt": "대규모 개조 없이 기존 모터 제어반에 부착하는 형태의 저capex 절전 장치를 순환수 펌프 계통에 시범 적용해볼 후보 라인을 선정."
+  },
+  {
+    "id": "case-25",
+    "title": "막분리+PSA 통합 수소회수 공정",
+    "summary": "막분리로 1차 농축한 뒤 PSA로 최종 정제하는 하이브리드 구성으로, PSA 단독 대비 압축·재순환 부하를 줄이면서 수소 회수율과 순도를 동시에 높인 공정.",
+    "quantifiedBenefit": "수소 회수율 90%→97% 개선, 순도 99% 유지, 극저온 분리 단독 대비 에너지 약 -35%",
+    "plants": ["cracker"],
+    "categories": ["process_tech", "byproduct_upgrade"],
+    "source": {
+      "title": "Integrated membrane/PSA systems for hydrogen recovery from gas mixtures",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1944398624194088"
+    },
+    "ideaPrompt": "Cracker Off-gas 중 현재 연료가스로 소각되는 수소 함유 스트림을 막분리+PSA 통합으로 회수해 고순도 수소로 전환할 수 있는지 조성 데이터 기준 검토 — 반제품 고부가화의 또 다른 축."
+  },
+  {
+    "id": "case-26",
+    "title": "국내 석유화학 PSA 유닛 수소회수율 개선",
+    "summary": "국내 석유화학 플랜트의 기존 PSA(압력변동흡착) 유닛을 대상으로 흡착 사이클·압력 스케줄 재최적화를 통해 수소 회수율을 높인 실증 사례.",
+    "quantifiedBenefit": "설비 추가 없이 운전 파라미터 재최적화만으로 PSA 수소회수율 개선",
+    "plants": ["cracker"],
+    "categories": ["process_tech"],
+    "source": {
+      "title": "The enhancement of hydrogen recovery in PSA unit of domestic petrochemical plant",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S138589471300507X"
+    },
+    "ideaPrompt": "기존 PSA 유닛의 흡착 사이클/압력 스케줄을 재최적화하는 것만으로 설비 추가 없이 수소회수율을 높일 수 있는지 벤치마킹."
+  },
+  {
+    "id": "case-27",
+    "title": "용액중합 폴리에틸렌 공정 저압스팀 자체 재활용",
+    "summary": "용액중합(솔루션) 방식 폴리에틸렌 플랜트에서 발생하는 저압 스팀을 외부로 방출하지 않고 플랜트 내부 공정(예열, 용제회수탑 리보일러 등)에 재사용하도록 설계한 특허.",
+    "quantifiedBenefit": "공정에서 발생하는 저압 스팀의 약 1/3~1/2을 플랜트 내부에서 재사용 가능",
+    "plants": ["nexlene"],
+    "categories": ["heat_integration", "waste_heat"],
+    "source": {
+      "title": "Improved energy utilization in a solution polymerization plant (WO2014138854A1)",
+      "url": "https://patents.google.com/patent/WO2014138854A1/en"
+    },
+    "ideaPrompt": "Nexlene(용액중합) 공정에서 발생하는 저압 스팀 중 현재 외부로 방출·소각되는 비율이 있다면, 플랜트 내 재사용(예열, 용제 회수탑 리보일러) 여지를 특허 문헌 기준으로 재검토."
+  },
+  {
+    "id": "case-28",
+    "title": "폴리프로필렌 통합 건조탑 (스팀 절감형)",
+    "summary": "PP 파우더의 VOC 제거·건조 공정에서 가열-냉각 구간을 하나의 탑으로 통합해 열교환 효과를 강화하고, 별도 단위공정으로 분리했을 때보다 에너지 소비를 줄인 설계.",
+    "quantifiedBenefit": "가열-냉각 구간 통합으로 단일 유닛 가열 방식 대비 에너지 소비 저감",
+    "plants": ["pp"],
+    "categories": ["heat_integration", "process_tech"],
+    "source": {
+      "title": "Integrated tower for removing VOC from polypropylene particles (US12485584)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12485584"
+    },
+    "ideaPrompt": "PP 파우더 건조/VOC 제거 공정의 가열-냉각 구간이 분리되어 있다면, 통합형 탑 구조로 개조 시 스팀 절감 여지가 있는지 검토."
+  },
+  {
+    "id": "case-29",
+    "title": "압출공정 에너지 소비 구조 분석 (구동모터·히터 중심)",
+    "summary": "폴리머 압출공정의 에너지 소비를 실측·모델링한 연구로, 구동모터가 최대 에너지 소비원이고 배럴/다이 히터가 두 번째로 크다는 것을 정량적으로 확인.",
+    "quantifiedBenefit": "압출기 에너지 소비 중 구동모터가 최대 비중, 배럴/다이 히터가 2위 — 개선 우선순위의 근거 데이터",
+    "plants": ["lldpe", "hdpe", "pp", "nexlene"],
+    "categories": ["rotating_equipment", "process_tech"],
+    "source": {
+      "title": "Investigation of the process energy demand in polymer extrusion: A brief review and an experimental study",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306261914009714"
+    },
+    "ideaPrompt": "각 Polymer 공장 압출·펠레타이징 라인의 모터 부하율과 배럴 히터 설정온도를 전수 점검해, 구동모터 인버터화·히터 존별 최적화 우선순위를 매길 것."
+  },
+  {
+    "id": "case-30",
+    "title": "산업용 보일러 과잉공기(Excess Air) 최적화",
+    "summary": "저효율(53.67%)로 운전되던 산업 보일러를 분석한 결과 과잉 급수·배가스 열손실이 주 원인으로 확인되어, 연소공기 제어 조정만으로 효율을 개선한 사례. 일반적으로 약 15% 과잉공기가 최적 구간으로 제시됨.",
+    "quantifiedBenefit": "과잉공기 제어 최적화로 배가스 열손실 저감, 보일러 평균효율 60%→70% 개선 시 대규모 연료 절감 가능",
+    "plants": ["utility"],
+    "categories": ["waste_heat", "process_tech"],
+    "source": {
+      "title": "Energy Efficiency Improvement Strategies for Industrial Boilers: A Case Study",
+      "url": "https://www.researchgate.net/publication/259268333_Energy_Efficiency_Improvement_Strategies_for_Industrial_Boilers_A_Case_Study"
+    },
+    "ideaPrompt": "전 공장 스팀보일러의 배가스 O2/과잉공기 실측치를 표준치(약 15%)와 비교해, 벗어난 보일러부터 연소공기 제어 튜닝 우선순위를 매길 것."
+  },
+  {
+    "id": "case-31",
+    "title": "폐플라스틱 열분해유의 Cracker 피드 투입 (화학적 재활용)",
+    "summary": "폐플라스틱 열분해유(pyrolysis oil)를 나프타와 블렌딩해 스팀크래커에 투입한 벤치스케일 연속공정 실험. 오염물질(N/O/Cl/금속)로 인한 코킹 증가라는 트레이드오프도 함께 확인.",
+    "quantifiedBenefit": "COT 820℃에서 에틸렌 수율 약 23wt%, 850℃에서 약 28wt% — 순수 나프타 대비 오히려 높은 수율 (단, 코킹 경향 증가)",
+    "plants": ["cracker"],
+    "categories": ["byproduct_upgrade", "process_tech"],
+    "source": {
+      "title": "Waste plastic pyrolysis oils are promising feedstock for sustainable monomers production via steam cracking process",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165237025000038"
+    },
+    "ideaPrompt": "Cracker 피드에 폐플라스틱 열분해유를 나프타와 소량 블렌딩 투입하는 실증을 검토 — 원료 다변화·순환경제 대응 신사업 각도의 아이디어. 단, 불순물에 의한 코킹·촉매독 리스크는 전처리 설계 단계에서 반드시 고려."
+  },
+  {
+    "id": "case-32",
+    "title": "극저온 구간 터보익스팬더 동력회수 (Cold Box)",
+    "summary": "높은 등엔트로피 효율을 가진 터보익스팬더를 극저온 분리 구간(Cold Box)에 적용해 냉각 성능과 수율을 동시에 높이고, 팽창 과정에서 발생하는 동력 일부를 회수하는 방식.",
+    "quantifiedBenefit": "냉각 성능·에틸렌 수율 동시 개선 + 압축동력 일부 회수 (전통적 팽창밸브 대비)",
+    "plants": ["cracker"],
+    "categories": ["rotating_equipment", "waste_heat"],
+    "source": {
+      "title": "How to use your turboexpanders in energy recovery (Turbomachinery Magazine)",
+      "url": "https://www.turbomachinerymag.com/view/how-to-use-turboexpanders-in-energy-recovery"
+    },
+    "ideaPrompt": "Cracker 냉동/분리 계통(Cold Box)에서 단순 팽창밸브(JT valve)로 압력을 낮추는 구간이 있다면, 터보익스팬더 교체로 동력회수가 가능한지 압력차·유량 기준 스크리닝."
+  },
+  {
+    "id": "case-33",
+    "title": "IoT+머신러닝 기반 디지털 트윈 생산 최적화",
+    "summary": "실제 석유화학 공장의 IoT 데이터로 학습한 머신러닝 모델을 디지털 트윈 구조에 결합해 실시간 생산 제어·최적화를 검증한 프레임워크.",
+    "quantifiedBenefit": "실제 석유화학 공장 데이터로 검증된 IoT+ML 디지털 트윈 프레임워크 — 실시간 데이터 기반 생산 최적화",
+    "plants": ["utility"],
+    "categories": ["apc_optimization"],
+    "source": {
+      "title": "Machine Learning based Digital Twin Framework for Production Optimization in Petrochemical Industry",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0268401218311484"
+    },
+    "ideaPrompt": "Historian 데이터가 이미 쌓여있는 설비 한 곳을 파일럿으로 골라, ML 기반 디지털트윈으로 실시간 운전 최적화를 시범 적용해볼 것 — 공정 지식이 부족해도 데이터 기반으로 시작 가능한 과제."
+  },
+  {
+    "id": "case-34",
+    "title": "가스터빈 열병합발전(CHP)으로 노후 보일러 대체",
+    "summary": "폴리머 플랜트에서 노후 소형 보일러 여러 대를 가스터빈 기반 열병합발전(CHP) 1기로 통합 대체해 스팀과 전력을 동시에 자가생산한 사례.",
+    "quantifiedBenefit": "12t/h급 보일러 3기를 15MW 가스터빈 CHP로 대체, 약 14MWe 상당 전력비용 절감",
+    "plants": ["utility"],
+    "categories": ["waste_heat", "rotating_equipment"],
+    "source": {
+      "title": "Combined heat and power (2022) — Ipieca Energy Efficiency Compendium",
+      "url": "https://www.ipieca.org/resources/energy-efficiency-compendium/combined-heat-and-power-2022"
+    },
+    "ideaPrompt": "노후 보일러 교체 시점이 다가오는 설비가 있다면, 단순 교체 대신 가스터빈 CHP(열병합)로 대체해 스팀+전력을 동시에 자가생산하는 옵션을 투자검토 대상에 포함."
+  },
+  {
+    "id": "case-35",
+    "title": "배관·용기 보온재 열손실 저감",
+    "summary": "스팀·고온수 배관 계통 중 보온이 누락되거나 노후화된 구간을 재시공해 열손실을 줄인 사례. 저capex·즉시 실행 가능한 대표적 quick-win으로 분류됨.",
+    "quantifiedBenefit": "보온재 시공만으로 배관 열손실 최대 -88%, 회수기간 1년 미만 사례 다수",
+    "plants": ["utility"],
+    "categories": ["heat_integration", "waste_heat"],
+    "source": {
+      "title": "Saving Energy by Insulating Pipe Components on Steam and Hot Water Distribution Systems",
+      "url": "https://insulation.org/io/articles/saving-energy-by-insulating-pipe-components-on-steam-and-hot-water-distribution-systems/"
+    },
+    "ideaPrompt": "열화상 카메라로 전 공장 스팀/고온 배관 및 밸브·플랜지 보온 누락 구간을 스캔해, 회수기간이 가장 짧은 구간부터 보온 보수 리스트업 — 가장 저capex·즉시 실행 가능한 아이디어."
+  },
+  {
+    "id": "case-36",
+    "title": "폴리머 플랜트 배기가스 재활용을 통한 질소 퍼지 저감",
+    "summary": "중합용제·모노머를 제거 처리한 배기가스를 반응기/사일로 블랭킷팅용 퍼지가스로 재사용하도록 설계해, 신규 불활성가스 투입 필요량을 줄인 특허.",
+    "quantifiedBenefit": "정제된 자체 배기가스로 퍼지가스 일부 대체 → 신규 질소(N2) 투입량 저감",
+    "plants": ["lldpe", "hdpe", "pp"],
+    "categories": ["process_tech", "waste_heat"],
+    "source": {
+      "title": "Method of reusing exhaust gas in polymer production plant (US7449048)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449048"
+    },
+    "ideaPrompt": "LLDPE/HDPE/PP 반응기·사일로 블랭킷팅에 쓰이는 질소 사용량 중, 정제된 자체 배기가스로 대체 가능한 부분이 있는지 순도 요구조건 기준으로 검토 — 유틸리티(N2 plant) 부하 저감 아이디어."
+  },
+  {
+    "id": "case-37",
+    "title": "질소 퍼지 전환을 통한 연료가스·Flare 저감 (가스플랜트 실증)",
+    "summary": "설비 정비 시 퍼지용으로 쓰던 연료가스를 질소로 전환해 플레어링·배출을 줄인 실증 사례. 투자비 대비 절감액과 회수기간이 구체적으로 제시됨.",
+    "quantifiedBenefit": "연 배출 약 23,469톤 저감, 연 약 $1.68M 절감, 회수기간 19.2개월",
+    "plants": ["utility", "cracker"],
+    "categories": ["flare_loss"],
+    "source": {
+      "title": "CASE STUDY: Facility Purging with Nitrogen — STEP Engineered Nitrogen Services",
+      "url": "https://energynow.ca/2021/06/case-study-facility-purging-with-nitrogen-step-engineered-nitrogen-services/"
+    },
+    "ideaPrompt": "정기보수(턴어라운드) 시 설비 퍼지에 연료가스를 쓰고 있다면, 질소 퍼지로 전환했을 때의 투자비 대비 절감효과를 이 사례의 회수기간(19.2개월) 기준으로 1차 스크리닝."
+  },
+  {
+    "id": "case-38",
+    "title": "히트펌프 결합 증류탑 설계전략 (비점차 작은 분리계 우선)",
+    "summary": "비점차가 작아 환류비가 크고 리보일러/컨덴서 부하가 큰 분리계에서 히트펌프 결합 컬럼의 경제성이 특히 높아진다는 설계 가이드라인.",
+    "quantifiedBenefit": "비점차가 작은 분리계일수록 히트펌프 결합 컬럼의 경제성 우위가 커짐 (설계 가이드라인)",
+    "plants": ["butadiene", "px"],
+    "categories": ["heat_integration", "process_tech"],
+    "source": {
+      "title": "Design strategy for heat pump assisted distillation system",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/0198759386900391"
+    },
+    "ideaPrompt": "PX 이성질체 분리탑, BD 추출증류탑처럼 비점차가 작아 환류비가 큰 컬럼부터 히트펌프 결합 경제성 스크리닝 우선순위에 올릴 것."
   }
 ]
